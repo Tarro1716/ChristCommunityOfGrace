@@ -1,0 +1,321 @@
+/* ===== CSS Custom Properties ===== */
+:root {
+  --color-primary: #2E5339;
+  --color-accent: #C8785E;
+  --color-bg-cream: #F5F1EB;
+  --color-text-dark: #2D2D2D;
+  --color-text-muted: #6B6B6B;
+  --color-white: #FFFFFF;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary) !important;
+  line-height: 1.2;
+}
+
+.nav-link {
+  color: var(--color-text-dark) !important;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 70%;
+}
+
+/* ===== Buttons ===== */
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-accent:hover {
+  background-color: #b5694d;
+  color: var(--color-white);
+}
+
+.btn-primary-custom {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #234228;
+  color: var(--color-white);
+}
+
+/* ===== Section Spacing ===== */
+.section-padding {
+  padding: 5rem 0;
+}
+
+.bg-cream {
+  background-color: var(--color-bg-cream);
+}
+
+/* ===== Page Hero Banner ===== */
+.page-hero {
+  background-color: var(--color-bg-cream);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0;
+}
+
+/* ===== Cards ===== */
+.card-custom {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* ===== Section Headings ===== */
+.section-heading {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-subtext {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== Links ===== */
+.link-accent {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link-accent:hover {
+  color: #b5694d;
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: var(--color-primary);
+  color: rgba(255,255,255,0.85);
+  padding: 4rem 0 1.5rem;
+}
+
+.site-footer h5 {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  margin-bottom: 1.25rem;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: var(--color-white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ===== Home Hero ===== */
+.home-hero {
+  min-height: calc(100vh - 76px);
+}
+
+.home-hero-image {
+  background-color: #c9d3c0;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+.home-hero-text {
+  background-color: var(--color-bg-cream);
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-hero-text h1 {
+  font-size: 3.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.home-hero-text .service-times {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #d0c8b8;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+}
+
+.service-link:hover {
+  color: var(--color-accent);
+}
+
+.featured-label {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.featured-links a {
+  display: block;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s;
+}
+
+.featured-links a:hover {
+  color: var(--color-accent);
+}
+
+/* ===== Event Date Badge ===== */
+.date-badge {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  min-width: 60px;
+}
+
+.date-badge .month {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.date-badge .day {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991.98px) {
+  .home-hero-text {
+    padding: 3rem 2rem;
+  }
+
+  .home-hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-padding {
+    padding: 3.5rem 0;
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 2.5rem 0;
+  }
+
+  .page-hero {
+    padding: 3rem 0;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
