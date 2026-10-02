@@ -25,7 +25,7 @@ npm test        # builds all pages into the root folder and runs the checks
 
 or just `node build.js` to build without the checks. Commit the regenerated `.html` files together with your source change.
 
-To preview locally: `npm run serve` and open http://localhost:8080. (Opening the files directly from disk also works, except the language toggle, which needs a web server.)
+To preview locally: `npm run serve` and open http://localhost:8080 (works on Windows, Mac and Linux; needs only Node). (Opening the files directly from disk also works, except the language toggle, which needs a web server.)
 
 ## Things the church still needs to fill in
 
