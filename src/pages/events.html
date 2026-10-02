@@ -1,0 +1,63 @@
+---
+title: Events — Christ Community of Grace
+description: Weekly services, Bible studies, and upcoming events at Christ Community of Grace in Calamba.
+bodyClass: page-events
+---
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="events.title">News &amp; Events</h1>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <h2 class="section-heading" data-i18n="events.upcoming">Upcoming Events</h2>
+          <div class="event-list" data-events>
+{{eventsList}}
+          </div>
+          <p class="text-muted d-none" data-events-empty data-i18n="events.none">No upcoming events are scheduled right now. See you on Sunday!</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="side-card">
+            <h2 class="side-card-heading" data-i18n="events.weekly">Every Week</h2>
+            {{serviceTimesList}}
+            <p class="small-text mt-3 mb-0" data-i18n="events.weeklyNote">Sunday worship and midweek Bible study happen every week. No sign-up needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <h2 class="section-heading text-center" data-i18n="events.announcements">Announcements</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-2" data-i18n="events.ann1.title">Volunteer Sign-Up</h3>
+              <p class="card-text text-muted mb-0 small-text" data-i18n="events.ann1.body">We're looking for volunteers for our children's ministry program. Contact the church office for details.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-2" data-i18n="events.ann2.title">New Member Class</h3>
+              <p class="card-text text-muted mb-0 small-text" data-i18n="events.ann2.body">Interested in becoming a member? Our next new members class will be announced soon.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-2" data-i18n="events.ann3.title">Prayer Requests</h3>
+              <p class="card-text text-muted mb-0 small-text" data-i18n="events.ann3.body">Submit your prayer requests through our contact page. Our prayer team meets weekly to lift up your needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

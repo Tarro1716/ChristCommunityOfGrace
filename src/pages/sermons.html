@@ -1,0 +1,38 @@
+---
+title: Sermons — Christ Community of Grace
+description: Watch recent sermons and Bible teaching from Christ Community of Grace in Calamba, Laguna.
+bodyClass: page-sermons
+---
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="sermons.title">Sermons</h1>
+      <p class="page-hero-sub" data-i18n="sermons.sub">Watch our latest sermons and Bible teachings.</p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="narrow text-center">
+        <a href="{{site.youtube.channel}}" target="_blank" rel="noopener" class="btn btn-accent">
+          <svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg>
+          <span data-i18n="sermons.channel">Visit Our YouTube Channel</span>
+        </a>
+        <a href="{{site.youtube.livestream}}" target="_blank" rel="noopener" class="btn btn-outline-primary-custom ms-2">
+          <svg class="icon" aria-hidden="true"><use href="#i-play-circle"/></svg>
+          <span data-i18n="home.hero.livestream">Watch Livestream</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="row g-4">
+{{sermonsGrid}}
+      </div>
+      <p class="text-center text-muted mt-5">
+        <span data-i18n="sermons.moreOn">Find more sermons and Bible studies on our</span>
+        <a href="{{site.youtube.channel}}" target="_blank" rel="noopener" class="link-accent">YouTube</a>.
+      </p>
+    </div>
+  </section>

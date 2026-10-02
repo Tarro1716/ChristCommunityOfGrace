@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Women's Ministry">
+              <rect width="400" height="200" fill="#c9d3c0"/>
+              <circle cx="200" cy="90" r="20" fill="#2E5339" opacity="0.75"/>
+              <ellipse cx="200" cy="58" rx="12" ry="18" fill="#2E5339" opacity="0.45"/>
+              <ellipse cx="200" cy="122" rx="12" ry="18" fill="#2E5339" opacity="0.45"/>
+              <ellipse cx="168" cy="90" rx="18" ry="12" fill="#2E5339" opacity="0.45"/>
+              <ellipse cx="232" cy="90" rx="18" ry="12" fill="#2E5339" opacity="0.45"/>
+              <ellipse cx="177" cy="67" rx="12" ry="18" transform="rotate(-45 177 67)" fill="#2E5339" opacity="0.35"/>
+              <ellipse cx="223" cy="67" rx="12" ry="18" transform="rotate(45 223 67)" fill="#2E5339" opacity="0.35"/>
+              <circle cx="200" cy="90" r="10" fill="white" opacity="0.7"/>
+              <text x="200" y="160" font-family="Georgia, serif" font-size="15" fill="#2E5339" text-anchor="middle" font-weight="bold">Women's Ministry</text>
+            </svg>

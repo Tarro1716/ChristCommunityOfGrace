@@ -1,0 +1,78 @@
+---
+title: Give — Christ Community of Grace
+description: Support the ministry of Christ Community of Grace in Calamba through GCash, bank transfer, or in person.
+bodyClass: page-give
+---
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="give.title">Give</h1>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="narrow text-center">
+        <blockquote class="scripture">
+          <p data-i18n="give.verse">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p>
+          <footer>— 2 Corinthians 9:7</footer>
+        </blockquote>
+        <p class="lead-text" data-i18n="give.intro">Your generosity supports the ministry and mission of Christ Community of Grace. Thank you for partnering with us in the work God is doing in Calamba and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <h2 class="section-heading text-center" data-i18n="give.ways">Ways to Give</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body text-center">
+              <svg class="icon icon-xl text-primary-custom" aria-hidden="true"><use href="#i-phone"/></svg>
+              <h3 class="h5 mt-3 mb-2">GCash</h3>
+              {{#if site.giving.gcash.qrImage}}<img class="qr-code" src="{{site.giving.gcash.qrImage}}" alt="GCash QR code" width="180" height="180" loading="lazy">{{/if}}
+              <p class="mb-1 small-text" data-i18n="give.gcash.send">Send your gift via GCash to:</p>
+              <p class="copy-row">
+                <strong class="copy-value" id="gcashNumber">{{site.giving.gcash.number}}</strong>
+                <button type="button" class="copy-btn" data-copy="#gcashNumber" aria-label="Copy GCash number" data-i18n-attr="aria-label:give.copyGcash">
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-copy"/></svg>
+                  <span data-i18n="common.copy">Copy</span>
+                </button>
+              </p>
+              <p class="small-text mb-0">{{site.giving.gcash.name}}</p>
+              <p class="text-muted small-text mb-0" data-i18n="give.gcash.note">Please include your name in the message.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body text-center">
+              <svg class="icon icon-xl text-primary-custom" aria-hidden="true"><use href="#i-bank"/></svg>
+              <h3 class="h5 mt-3 mb-2" data-i18n="give.bank.title">Bank Transfer</h3>
+              <p class="mb-1 small-text" data-i18n="give.bank.send">Transfer your gift to:</p>
+              <p class="mb-1"><strong>{{site.giving.bank.bankName}}</strong></p>
+              <p class="copy-row">
+                <span class="copy-value" id="bankNumber">{{site.giving.bank.accountNumber}}</span>
+                <button type="button" class="copy-btn" data-copy="#bankNumber" aria-label="Copy account number" data-i18n-attr="aria-label:give.copyBank">
+                  <svg class="icon icon-sm" aria-hidden="true"><use href="#i-copy"/></svg>
+                  <span data-i18n="common.copy">Copy</span>
+                </button>
+              </p>
+              <p class="small-text mb-0">{{site.giving.bank.accountName}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body text-center">
+              <svg class="icon icon-xl text-primary-custom" aria-hidden="true"><use href="#i-heart"/></svg>
+              <h3 class="h5 mt-3 mb-2" data-i18n="give.person.title">In Person</h3>
+              <p class="mb-1 small-text" data-i18n="give.person.body">Give during our Sunday worship services. An offering is collected during the service.</p>
+              <p class="text-muted small-text mb-0">{{site.address.line1}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-muted small-text mt-4" data-i18n="give.receipt">Need a receipt or have a question about giving? Reach out through our contact page.</p>
+    </div>
+  </section>

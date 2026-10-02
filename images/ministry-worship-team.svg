@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Worship Team">
+              <rect width="400" height="200" fill="#c9d3c0"/>
+              <rect x="196" y="55" width="10" height="60" rx="3" fill="#2E5339" opacity="0.7"/>
+              <ellipse cx="191" cy="118" rx="14" ry="10" fill="#2E5339" opacity="0.7"/>
+              <rect x="222" y="65" width="10" height="55" rx="3" fill="#2E5339" opacity="0.6"/>
+              <ellipse cx="217" cy="122" rx="14" ry="10" fill="#2E5339" opacity="0.6"/>
+              <rect x="196" y="55" width="36" height="8" rx="3" fill="#2E5339" opacity="0.65"/>
+              <path d="M155,80 Q148,95 155,110" stroke="#2E5339" stroke-width="3" fill="none" opacity="0.5"/>
+              <path d="M145,70 Q133,95 145,120" stroke="#2E5339" stroke-width="3" fill="none" opacity="0.4"/>
+              <path d="M255,80 Q262,95 255,110" stroke="#2E5339" stroke-width="3" fill="none" opacity="0.5"/>
+              <path d="M265,70 Q277,95 265,120" stroke="#2E5339" stroke-width="3" fill="none" opacity="0.4"/>
+              <text x="200" y="160" font-family="Georgia, serif" font-size="15" fill="#2E5339" text-anchor="middle" font-weight="bold">Worship Team</text>
+            </svg>

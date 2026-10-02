@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{pageTitle}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#2E5339">
+  <link rel="canonical" href="{{site.url}}/{{slug}}">
+  {{robotsMeta}}
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:site_name" content="{{site.name}}">
+  <meta property="og:title" content="{{pageTitle}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{site.url}}/images/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="{{site.url}}/{{slug}}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="{{bodyClass}}">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+  {{iconSprite}}
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">{{site.name}}</a>
+
+      <div class="d-flex align-items-center gap-1 order-lg-last">
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:nav.switchLang">
+          <svg class="icon" aria-hidden="true"><use href="#i-translate"/></svg>
+          <span data-lang-label class="d-none d-sm-inline">Tagalog</span><span data-lang-code class="d-sm-none">TL</span>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open menu" data-i18n-attr="aria-label:nav.openMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileNavLabel">{{site.name}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-i18n-attr="aria-label:nav.close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="ministries.html" data-i18n="nav.ministries">Ministries</a></li>
+            <li class="nav-item"><a class="nav-link" href="sermons.html" data-i18n="nav.sermons">Sermons</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html" data-i18n="nav.events">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="give.html" data-i18n="nav.give">Give</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li class="nav-item nav-item-cta"><a class="btn btn-accent btn-sm nav-cta" href="new-here.html" data-i18n="nav.newHere">New Here?</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+{{content}}
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h2 class="footer-heading">{{site.name}}</h2>
+          <p data-i18n="footer.tagline">{{site.tagline}}</p>
+          <address class="footer-address">
+            <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
+            <span>{{site.address.line1}}<br>{{site.address.line2}}</span>
+          </address>
+          <a class="footer-directions" href="{{directionsUrl}}" target="_blank" rel="noopener">
+            <span data-i18n="common.getDirections">Get directions</span>
+            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-box-arrow-up-right"/></svg>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <h2 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h2>
+          <ul class="list-unstyled footer-links">
+            <li><a href="new-here.html" data-i18n="nav.newHere">New Here?</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="ministries.html" data-i18n="nav.ministries">Ministries</a></li>
+            <li><a href="sermons.html" data-i18n="nav.sermons">Sermons</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+            <li><a href="give.html" data-i18n="nav.give">Give</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <h2 class="footer-heading" data-i18n="common.serviceTimes">Service Times</h2>
+          {{serviceTimesList}}
+          <h2 class="footer-heading mt-4" data-i18n="footer.connect">Connect</h2>
+          <ul class="list-unstyled footer-links footer-connect">
+            <li><a href="{{site.youtube.channel}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg> YouTube</a></li>
+            {{#if site.contact.facebook}}<li><a href="{{site.contact.facebook}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> Facebook</a></li>{{/if}}
+            {{#if site.contact.messenger}}<li><a href="{{site.contact.messenger}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-messenger"/></svg> Messenger</a></li>{{/if}}
+            {{#if site.contact.phone}}<li><a href="tel:{{phoneHref}}"><svg class="icon" aria-hidden="true"><use href="#i-telephone"/></svg> {{site.contact.phone}}</a></li>{{/if}}
+            {{#if site.contact.email}}<li><a href="mailto:{{site.contact.email}}"><svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg> {{site.contact.email}}</a></li>{{/if}}
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span data-year>{{year}}</span> {{site.name}}. <span data-i18n="footer.rights">All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

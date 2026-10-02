@@ -1,0 +1,12 @@
+{
+  "name": "christ-community-of-grace",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Static website for Christ Community of Grace, Calamba. No dependencies.",
+  "scripts": {
+    "build": "node build.js",
+    "test": "node build.js && node --test test/build.test.js",
+    "serve": "python3 -m http.server 8080"
+  },
+  "engines": { "node": ">=18" }
+}

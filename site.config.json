@@ -1,0 +1,58 @@
+{
+  "name": "Christ Community of Grace",
+  "shortName": "CCG",
+  "tagline": "A Bible-believing church in Calamba, Philippines.",
+  "url": "https://tarro1716.github.io/ChristCommunityOfGrace",
+  "address": {
+    "line1": "2nd Floor, MM&Co. Bldg., 8000 St. Angela Street",
+    "line2": "Lakeview Phase III, Halang, Calamba, Laguna 4027",
+    "mapQuery": "2nd Floor, MM&Co. Bldg., 8000 St. Angela Street, Lakeview Phase III, Halang, Calamba, Laguna 4027, Philippines"
+  },
+  "serviceTimes": [
+    {
+      "label": {
+        "en": "1st Sunday",
+        "tl": "Unang Linggo"
+      },
+      "time": "9:00 AM"
+    },
+    {
+      "label": {
+        "en": "2nd–5th Sunday",
+        "tl": "Ika-2 hanggang ika-5 Linggo"
+      },
+      "time": "9:30 AM"
+    },
+    {
+      "label": {
+        "en": "Wednesday",
+        "tl": "Miyerkules"
+      },
+      "time": "6:00 PM"
+    }
+  ],
+  "contact": {
+    "phone": "",
+    "email": "",
+    "facebook": "",
+    "messenger": ""
+  },
+  "youtube": {
+    "channel": "https://www.youtube.com/@calambacommunitychurch2024",
+    "livestream": "https://www.youtube.com/@calambacommunitychurch2024/streams",
+    "uploadsPlaylist": ""
+  },
+  "giving": {
+    "gcash": {
+      "number": "0917-XXX-XXXX",
+      "name": "Christ Community of Grace",
+      "qrImage": ""
+    },
+    "bank": {
+      "bankName": "BDO",
+      "accountNumber": "XXXX-XXXX-XXXX",
+      "accountName": "Christ Community of Grace"
+    }
+  },
+  "contactFormKey": "YOUR_ACCESS_KEY_HERE"
+}
