@@ -1,28 +1,36 @@
-# Ngrok Local Preview Guide
+# Sharing a Preview with ngrok
 
-## Prerequisites
-- Python 3 installed
-- ngrok downloaded to `/tmp/ngrok`
-- ngrok auth token configured
+Lets someone outside your network view the site on their phone while you work on it.
+
+## Prerequisites (one time)
+
+- Node installed (the site server needs nothing else)
+- ngrok installed at `~/.local/bin/ngrok` (WSL/Linux) and signed in:
+  `ngrok config add-authtoken <your token>` from https://dashboard.ngrok.com
 
 ## Start
 
+From the project folder, in WSL:
+
 ```bash
-cd /mnt/c/users/chin/documents/ChristCommunityOfGrace
-python3 -m http.server 8080 &
-/tmp/ngrok http 8080 &
+node serve.js 8090 &
+~/.local/bin/ngrok http 8090
 ```
 
-Visit http://127.0.0.1:4040 to see your public ngrok URL. Share that URL with others to preview the site.
+ngrok prints a `Forwarding https://....ngrok-free.dev` line. Share that URL.
+Port 8080 is often taken by other projects on this machine, which is why 8090 is used here.
 
 ## Stop
 
+Press Ctrl+C in the ngrok window, then:
+
 ```bash
-pkill ngrok
-pkill -f "python3 -m http.server"
+pkill -f "serve.js 8090"
 ```
 
 ## Notes
-- The public URL changes each time you restart (free tier)
-- Visitors will see an ngrok interstitial page on first load — click "Visit Site" to proceed
-- The tunnel stays active as long as both processes are running
+
+- Rebuild with `npm test` after editing; the server serves the built files, so visitors see changes on refresh.
+- The public URL changes each time ngrok restarts on the free plan.
+- Visitors see an ngrok warning page on first load. Click "Visit Site" to continue.
+- The tunnel stays up only while both processes are running and this computer is awake.
