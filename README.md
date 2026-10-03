@@ -48,9 +48,15 @@ English is written in the HTML. Elements with `data-i18n="some.key"` are swapped
 
 Each entry in `data/events.json` has `date` (YYYY-MM-DD), `time`, `title` and `description`. Past events are hidden automatically in the browser, so there is no need to delete them right away. The weekly service schedule comes from `site.config.json` and always shows.
 
-## Social share image and icons
+## Logo, favicon and share image
 
-`images/og-default.png`, `images/apple-touch-icon.png` and `images/favicon-32.png` are rendered from `src/og/og.html` and `src/og/icon.html`. To regenerate after changing them, screenshot each file at 1200×630 and 180×180 with any browser, or use headless Chrome.
+The logo is `images/logo.png` (transparent background), used in the navbar and footer. If the logo changes, run:
+
+```bash
+python3 tools/make-icons.py path/to/new-logo.jpg
+```
+
+That rewrites `images/logo.png`, the favicons and the iOS/Android icons. Then regenerate the social share image `images/og-default.png` by opening `src/og/og.html` in a browser at 1200×630 and taking a screenshot (or with headless Chrome). The share image is what Facebook and Messenger show when someone posts a link to the site.
 
 ## Design notes
 

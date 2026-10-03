@@ -64,7 +64,7 @@ address { font-style: normal; }
 /* ===== Navbar ===== */
 .navbar { border-bottom: 1px solid #e5e5e5; min-height: var(--nav-height); padding-block: 0.5rem; }
 .navbar-brand { display: inline-flex; align-items: center; gap: 0.55rem; }
-.brand-mark { width: 34px; height: 34px; flex-shrink: 0; }
+.brand-mark { height: 40px; width: auto; flex-shrink: 0; }
 .navbar-brand {
   font-family: var(--font-heading);
   font-size: clamp(0.95rem, 3.9vw, 1.25rem);
@@ -75,7 +75,7 @@ address { font-style: normal; }
   max-width: 64vw;
   margin-right: 0.25rem;
 }
-@media (max-width: 575.98px) { .brand-mark { width: 28px; height: 28px; } .navbar-brand { gap: 0.4rem; } }
+@media (max-width: 575.98px) { .brand-mark { height: 32px; } .navbar-brand { gap: 0.4rem; } }
 .navbar-toggler { padding: 0.4rem 0.5rem; }
 .navbar-toggler:focus { box-shadow: 0 0 0 3px rgba(46,83,57,0.35); }
 .nav-link {
@@ -290,7 +290,8 @@ address { font-style: normal; }
   color: rgba(255,255,255,0.85); padding: 3rem 0 1.25rem;
 }
 .footer-brand { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
-.footer-brand img { width: 44px; height: 44px; }
+.footer-logo-tile { display: inline-flex; align-items: center; justify-content: center; background: var(--color-bg-cream); border-radius: 10px; padding: 0.3rem 0.4rem; flex-shrink: 0; }
+.footer-brand img { height: 48px; width: auto; display: block; }
 .footer-seeyou { font-family: var(--font-heading); font-style: italic; font-size: 1.35rem; color: #fff; text-align: center; margin: 1.5rem 0 0; }
 .footer-heading { color: #fff; font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 1rem; }
 .site-footer a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s; }
