@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="{{bodyClass}}">
   <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -41,7 +42,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main">
     <div class="container">
-      <a class="navbar-brand" href="index.html">{{site.name}}</a>
+      <a class="navbar-brand" href="index.html"><img class="brand-mark" src="images/logo-mark.svg" alt="" width="34" height="34"><span>{{site.name}}</span></a>
 
       <div class="d-flex align-items-center gap-1 order-lg-last">
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:nav.switchLang">
@@ -82,7 +83,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <h2 class="footer-heading">{{site.name}}</h2>
+          <div class="footer-brand"><img src="images/logo-mark.svg" alt="" width="44" height="44"><h2 class="footer-heading mb-0">{{site.name}}</h2></div>
           <p data-i18n="footer.tagline">{{site.tagline}}</p>
           <address class="footer-address">
             <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
@@ -118,6 +119,7 @@
           </ul>
         </div>
       </div>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>{{year}}</span> {{site.name}}. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

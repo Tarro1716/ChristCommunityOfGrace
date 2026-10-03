@@ -14,7 +14,8 @@ bodyClass: page-new-here
     <div class="container">
       <div class="row g-5 align-items-start">
         <div class="col-lg-7">
-          <h2 class="section-heading" data-i18n="newhere.expect.heading">What to Expect</h2>
+          <p class="eyebrow" data-i18n="newhere.expect.eyebrow">Your First Visit</p>
+      <h2 class="section-heading" data-i18n="newhere.expect.heading">What to Expect</h2>
           <p class="lead-text" data-i18n="newhere.expect.body">Our Sunday service lasts about an hour and a half. We sing together, pray together, and hear a message from the Bible that is clear and practical. You will not be singled out or asked to give. Come as you are.</p>
           <div class="info-grid">
             <div class="info-item">
@@ -68,8 +69,37 @@ bodyClass: page-new-here
     </div>
   </section>
 
+  <!-- ===== PASTOR'S NOTE + LOCATION ===== -->
+  <section class="section-padding bg-sage-light">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="eyebrow" data-i18n="newhere.note.eyebrow">A Note from Our Pastor</p>
+          <blockquote class="pastor-note">
+            <p data-i18n="newhere.note.body">Walking into a new church can feel like a big step. I want you to know that there is no pressure here, only a warm welcome. Come as you are, bring your questions, and let us show you the love of Jesus. We would be honoured to have you with us this Sunday.</p>
+            <footer>
+              <span class="pastor-signature">Pastor Name</span>
+              <span class="pastor-role" data-i18n="about.leaders.role1">Senior Pastor</span>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-lg-6">
+          <figure class="photo-tile mb-0">
+            <img src="images/tile-building.svg" alt="" width="600" height="400" loading="lazy">
+            <figcaption>
+              <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
+              <span data-i18n="newhere.location.caption">You'll find us here</span>
+              <small>{{site.address.line1}}</small>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-padding bg-cream">
     <div class="container">
+      <p class="eyebrow text-center" data-i18n="newhere.faq.eyebrow">Good to Know</p>
       <h2 class="section-heading text-center" data-i18n="newhere.faq.heading">Common Questions</h2>
       <div class="accordion narrow-lg" id="faqAccordion">
         <div class="accordion-item">
@@ -111,7 +141,8 @@ bodyClass: page-new-here
   <section class="section-padding bg-white">
     <div class="container">
       <div class="narrow-sm text-center">
-        <h2 class="section-heading" data-i18n="newhere.hello.heading">Say Hello</h2>
+        <p class="eyebrow text-center" data-i18n="newhere.hello.eyebrow">Get in Touch</p>
+      <h2 class="section-heading" data-i18n="newhere.hello.heading">Say Hello</h2>
         <p class="lead-text" data-i18n="newhere.hello.body">Have a question before you visit? Send us a message and someone from our team will get back to you.</p>
         <div class="d-flex flex-wrap justify-content-center gap-2">
           {{#if site.contact.messenger}}<a href="{{site.contact.messenger}}" target="_blank" rel="noopener" class="btn btn-accent"><svg class="icon" aria-hidden="true"><use href="#i-messenger"/></svg> <span data-i18n="common.messageUs">Message us on Messenger</span></a>{{/if}}

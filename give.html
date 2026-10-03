@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="page-give">
   <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -49,7 +50,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Christ Community of Grace</a>
+      <a class="navbar-brand" href="index.html"><img class="brand-mark" src="images/logo-mark.svg" alt="" width="34" height="34"><span>Christ Community of Grace</span></a>
 
       <div class="d-flex align-items-center gap-1 order-lg-last">
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:nav.switchLang">
@@ -88,13 +89,18 @@
     </div>
   </section>
 
+  <section class="band-deep">
+    <div class="container text-center">
+      <p class="band-verse" data-i18n="give.verse">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p>
+      <p class="band-ref">2 Corinthians 9:7</p>
+    </div>
+  </section>
+
   <section class="section-padding bg-white">
     <div class="container">
       <div class="narrow text-center">
-        <blockquote class="scripture">
-          <p data-i18n="give.verse">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p>
-          <footer>— 2 Corinthians 9:7</footer>
-        </blockquote>
+        <p class="eyebrow text-center" data-i18n="give.eyebrow">Generosity</p>
+        <h2 class="section-heading" data-i18n="give.heading">Partner With Us</h2>
         <p class="lead-text" data-i18n="give.intro">Your generosity supports the ministry and mission of Christ Community of Grace. Thank you for partnering with us in the work God is doing in Calamba and beyond.</p>
       </div>
     </div>
@@ -102,6 +108,7 @@
 
   <section class="section-padding bg-cream">
     <div class="container">
+      <p class="eyebrow text-center" data-i18n="give.ways.eyebrow">How to Give</p>
       <h2 class="section-heading text-center" data-i18n="give.ways">Ways to Give</h2>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4">
@@ -163,7 +170,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <h2 class="footer-heading">Christ Community of Grace</h2>
+          <div class="footer-brand"><img src="images/logo-mark.svg" alt="" width="44" height="44"><h2 class="footer-heading mb-0">Christ Community of Grace</h2></div>
           <p data-i18n="footer.tagline">A Bible-believing church in Calamba, Philippines.</p>
           <address class="footer-address">
             <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
@@ -199,6 +206,7 @@
           </ul>
         </div>
       </div>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>2026</span> Christ Community of Grace. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

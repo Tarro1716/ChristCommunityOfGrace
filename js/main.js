@@ -157,16 +157,37 @@
   document.querySelectorAll('[data-events]').forEach(function (list) {
     var limit = parseInt(list.getAttribute('data-limit'), 10) || Infinity;
     var shown = 0;
+    var nextLabel = (dicts[currentLang] && dicts[currentLang]['events.next']) || 'Next';
     list.querySelectorAll('[data-date]').forEach(function (item) {
       var isPast = item.getAttribute('data-date') < today;
-      if (isPast || shown >= limit) item.classList.add('is-past');
-      else shown++;
+      if (isPast || shown >= limit) { item.classList.add('is-past'); return; }
+      if (shown === 0) {
+        item.classList.add('is-next');
+        var badge = item.querySelector('.date-badge');
+        if (badge) badge.setAttribute('data-next-label', nextLabel);
+      }
+      shown++;
     });
     var empty = list.parentElement.querySelector('[data-events-empty]');
     if (empty) empty.classList.toggle('d-none', shown > 0);
   });
 
-  // ---------- 6. Footer year ----------
+  // ---------- 6. Scroll reveal ----------
+  var revealTargets = document.querySelectorAll('main section > .container, .home-hero-text');
+  revealTargets.forEach(function (el) { el.classList.add('reveal'); });
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+    revealTargets.forEach(function (el) { io.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  // ---------- 7. Footer year ----------
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });

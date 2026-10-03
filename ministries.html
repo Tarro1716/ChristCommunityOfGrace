@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="page-ministries">
   <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -49,7 +50,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Christ Community of Grace</a>
+      <a class="navbar-brand" href="index.html"><img class="brand-mark" src="images/logo-mark.svg" alt="" width="34" height="34"><span>Christ Community of Grace</span></a>
 
       <div class="d-flex align-items-center gap-1 order-lg-last">
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:nav.switchLang">
@@ -91,9 +92,11 @@
 
   <section class="section-padding">
     <div class="container">
+      <p class="eyebrow text-center" data-i18n="ministries.eyebrow">Get Involved</p>
+      <h2 class="section-heading text-center mb-5" data-i18n="ministries.heading">Find Your Place</h2>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
-          <article class="card card-custom h-100">
+          <article class="card card-custom ministry-card h-100">
             <img class="card-img-top" src="images/ministry-small-groups.svg" alt="" width="400" height="200" loading="lazy">
             <div class="card-body">
               <h2 class="card-title h5" data-i18n="ministries.small.title">Small Groups</h2>
@@ -103,7 +106,7 @@
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
-          <article class="card card-custom h-100">
+          <article class="card card-custom ministry-card h-100">
             <img class="card-img-top" src="images/ministry-youth-ministry.svg" alt="" width="400" height="200" loading="lazy">
             <div class="card-body">
               <h2 class="card-title h5" data-i18n="ministries.youth.title">Youth Ministry</h2>
@@ -113,7 +116,7 @@
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
-          <article class="card card-custom h-100">
+          <article class="card card-custom ministry-card h-100">
             <img class="card-img-top" src="images/ministry-children-s-ministry.svg" alt="" width="400" height="200" loading="lazy">
             <div class="card-body">
               <h2 class="card-title h5" data-i18n="ministries.children.title">Children's Ministry</h2>
@@ -123,7 +126,7 @@
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
-          <article class="card card-custom h-100">
+          <article class="card card-custom ministry-card h-100">
             <img class="card-img-top" src="images/ministry-men-s-ministry.svg" alt="" width="400" height="200" loading="lazy">
             <div class="card-body">
               <h2 class="card-title h5" data-i18n="ministries.men.title">Men's Ministry</h2>
@@ -133,7 +136,7 @@
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
-          <article class="card card-custom h-100">
+          <article class="card card-custom ministry-card h-100">
             <img class="card-img-top" src="images/ministry-women-s-ministry.svg" alt="" width="400" height="200" loading="lazy">
             <div class="card-body">
               <h2 class="card-title h5" data-i18n="ministries.women.title">Women's Ministry</h2>
@@ -143,7 +146,7 @@
           </article>
         </div>
         <div class="col-lg-4 col-md-6">
-          <article class="card card-custom h-100">
+          <article class="card card-custom ministry-card h-100">
             <img class="card-img-top" src="images/ministry-worship-team.svg" alt="" width="400" height="200" loading="lazy">
             <div class="card-body">
               <h2 class="card-title h5" data-i18n="ministries.worship.title">Worship Team</h2>
@@ -163,7 +166,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <h2 class="footer-heading">Christ Community of Grace</h2>
+          <div class="footer-brand"><img src="images/logo-mark.svg" alt="" width="44" height="44"><h2 class="footer-heading mb-0">Christ Community of Grace</h2></div>
           <p data-i18n="footer.tagline">A Bible-believing church in Calamba, Philippines.</p>
           <address class="footer-address">
             <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
@@ -199,6 +202,7 @@
           </ul>
         </div>
       </div>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>2026</span> Christ Community of Grace. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

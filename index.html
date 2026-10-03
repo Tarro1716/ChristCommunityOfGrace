@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="page-home">
   <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -49,7 +50,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Christ Community of Grace</a>
+      <a class="navbar-brand" href="index.html"><img class="brand-mark" src="images/logo-mark.svg" alt="" width="34" height="34"><span>Christ Community of Grace</span></a>
 
       <div class="d-flex align-items-center gap-1 order-lg-last">
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:nav.switchLang">
@@ -118,11 +119,19 @@
   <!-- ===== WELCOME ===== -->
   <section class="section-padding bg-white">
     <div class="container">
-      <div class="narrow text-center">
-        <h2 class="section-heading" data-i18n="home.welcome.heading">Welcome</h2>
-        <p class="section-subtext" data-i18n="home.welcome.sub">We are glad you are here.</p>
-        <p class="lead-text" data-i18n="home.welcome.body">Christ Community of Grace is a Bible-believing, gospel-centered church in Calamba, Philippines. We gather to worship God, grow in His Word, and serve one another and our community with the love of Christ. Whether you are a long-time believer or simply curious about faith, you are welcome here.</p>
-        <a href="about.html" class="link-accent link-lg"><span data-i18n="common.learnMore">Learn More</span> &rarr;</a>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <figure class="photo-tile mb-0">
+            <img src="images/tile-welcome.svg" alt="" width="600" height="450" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p class="eyebrow" data-i18n="home.welcome.eyebrow">Who We Are</p>
+          <h2 class="section-heading" data-i18n="home.welcome.heading">Welcome</h2>
+          <p class="section-subtext" data-i18n="home.welcome.sub">We are glad you are here.</p>
+          <p class="lead-text" data-i18n="home.welcome.body">Christ Community of Grace is a Bible-believing, gospel-centered church in Calamba, Philippines. We gather to worship God, grow in His Word, and serve one another and our community with the love of Christ. Whether you are a long-time believer or simply curious about faith, you are welcome here.</p>
+          <a href="about.html" class="link-accent link-lg"><span data-i18n="common.learnMore">Learn More</span> &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -130,6 +139,7 @@
   <!-- ===== UPCOMING EVENTS ===== -->
   <section class="section-padding bg-cream">
     <div class="container">
+      <p class="eyebrow text-center" data-i18n="home.events.eyebrow">This Month</p>
       <h2 class="section-heading text-center" data-i18n="events.upcoming">Upcoming Events</h2>
       <p class="section-subtext text-center" data-i18n="home.events.sub">Join us for worship, study, and fellowship.</p>
       <div class="row g-4" data-events data-limit="3">
@@ -206,11 +216,20 @@
     </div>
   </section>
 
+  <!-- ===== VERSE BAND ===== -->
+  <section class="band-deep">
+    <div class="container text-center">
+      <p class="band-verse" data-i18n="home.band.verse">"Come to me, all you who are weary and burdened, and I will give you rest."</p>
+      <p class="band-ref">Matthew 11:28</p>
+    </div>
+  </section>
+
   <!-- ===== RECENT SERMON ===== -->
   <section class="section-padding bg-white">
     <div class="container">
       <div class="narrow-lg">
-        <h2 class="section-heading text-center" data-i18n="home.sermon.heading">Recent Sermon</h2>
+        <p class="eyebrow text-center" data-i18n="home.sermon.eyebrow">Listen</p>
+      <h2 class="section-heading text-center" data-i18n="home.sermon.heading">Recent Sermon</h2>
         <p class="section-subtext text-center" data-i18n="home.sermon.sub">Catch up on our latest message from God's Word.</p>
         <div class="yt-lite ratio ratio-16x9" data-id="dQw4w9WgXcQ" data-title="The Grace of God">
   <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
@@ -227,10 +246,11 @@
   </section>
 
   <!-- ===== NEW HERE ===== -->
-  <section class="section-padding bg-cream">
+  <section class="section-padding bg-sage-light">
     <div class="container">
       <div class="narrow-sm text-center">
-        <h2 class="section-heading" data-i18n="home.newhere.heading">New Here?</h2>
+        <p class="eyebrow text-center" data-i18n="home.newhere.eyebrow">Join Us</p>
+      <h2 class="section-heading" data-i18n="home.newhere.heading">New Here?</h2>
         <p class="lead-text" data-i18n="home.newhere.body">We would love to meet you! Whether it is your first Sunday or you are still deciding, we want you to feel at home. Find out what to expect when you visit, where we are located, and how to get connected.</p>
         <a href="new-here.html" class="btn btn-primary-custom" data-i18n="home.hero.planVisit">Plan Your Visit</a>
       </div>
@@ -244,7 +264,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <h2 class="footer-heading">Christ Community of Grace</h2>
+          <div class="footer-brand"><img src="images/logo-mark.svg" alt="" width="44" height="44"><h2 class="footer-heading mb-0">Christ Community of Grace</h2></div>
           <p data-i18n="footer.tagline">A Bible-believing church in Calamba, Philippines.</p>
           <address class="footer-address">
             <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
@@ -280,6 +300,7 @@
           </ul>
         </div>
       </div>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>2026</span> Christ Community of Grace. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

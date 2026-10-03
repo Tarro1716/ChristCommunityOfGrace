@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="page-contact">
   <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
@@ -49,7 +50,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Christ Community of Grace</a>
+      <a class="navbar-brand" href="index.html"><img class="brand-mark" src="images/logo-mark.svg" alt="" width="34" height="34"><span>Christ Community of Grace</span></a>
 
       <div class="d-flex align-items-center gap-1 order-lg-last">
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:nav.switchLang">
@@ -92,6 +93,7 @@
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6">
+          <p class="eyebrow" data-i18n="contact.form.eyebrow">We'd Love to Hear From You</p>
           <h2 class="section-heading mb-3" data-i18n="contact.form.heading">Send Us a Message</h2>
           <p class="text-muted mb-4" data-i18n="contact.form.sub">Questions, prayer requests, or just saying hello. We read every message.</p>
           <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
@@ -118,6 +120,7 @@
         </div>
 
         <div class="col-lg-6">
+          <p class="eyebrow" data-i18n="contact.visit.eyebrow">Find Us</p>
           <h2 class="section-heading mb-3" data-i18n="contact.visit.heading">Visit Us</h2>
           <ul class="contact-list list-unstyled">
             <li>
@@ -155,7 +158,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <h2 class="footer-heading">Christ Community of Grace</h2>
+          <div class="footer-brand"><img src="images/logo-mark.svg" alt="" width="44" height="44"><h2 class="footer-heading mb-0">Christ Community of Grace</h2></div>
           <p data-i18n="footer.tagline">A Bible-believing church in Calamba, Philippines.</p>
           <address class="footer-address">
             <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
@@ -191,6 +194,7 @@
           </ul>
         </div>
       </div>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>2026</span> Christ Community of Grace. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

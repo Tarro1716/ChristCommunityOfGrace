@@ -39,11 +39,19 @@ bodyClass: page-home
   <!-- ===== WELCOME ===== -->
   <section class="section-padding bg-white">
     <div class="container">
-      <div class="narrow text-center">
-        <h2 class="section-heading" data-i18n="home.welcome.heading">Welcome</h2>
-        <p class="section-subtext" data-i18n="home.welcome.sub">We are glad you are here.</p>
-        <p class="lead-text" data-i18n="home.welcome.body">Christ Community of Grace is a Bible-believing, gospel-centered church in Calamba, Philippines. We gather to worship God, grow in His Word, and serve one another and our community with the love of Christ. Whether you are a long-time believer or simply curious about faith, you are welcome here.</p>
-        <a href="about.html" class="link-accent link-lg"><span data-i18n="common.learnMore">Learn More</span> &rarr;</a>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <figure class="photo-tile mb-0">
+            <img src="images/tile-welcome.svg" alt="" width="600" height="450" loading="lazy">
+          </figure>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p class="eyebrow" data-i18n="home.welcome.eyebrow">Who We Are</p>
+          <h2 class="section-heading" data-i18n="home.welcome.heading">Welcome</h2>
+          <p class="section-subtext" data-i18n="home.welcome.sub">We are glad you are here.</p>
+          <p class="lead-text" data-i18n="home.welcome.body">Christ Community of Grace is a Bible-believing, gospel-centered church in Calamba, Philippines. We gather to worship God, grow in His Word, and serve one another and our community with the love of Christ. Whether you are a long-time believer or simply curious about faith, you are welcome here.</p>
+          <a href="about.html" class="link-accent link-lg"><span data-i18n="common.learnMore">Learn More</span> &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -51,6 +59,7 @@ bodyClass: page-home
   <!-- ===== UPCOMING EVENTS ===== -->
   <section class="section-padding bg-cream">
     <div class="container">
+      <p class="eyebrow text-center" data-i18n="home.events.eyebrow">This Month</p>
       <h2 class="section-heading text-center" data-i18n="events.upcoming">Upcoming Events</h2>
       <p class="section-subtext text-center" data-i18n="home.events.sub">Join us for worship, study, and fellowship.</p>
       <div class="row g-4" data-events data-limit="3">
@@ -63,11 +72,20 @@ bodyClass: page-home
     </div>
   </section>
 
+  <!-- ===== VERSE BAND ===== -->
+  <section class="band-deep">
+    <div class="container text-center">
+      <p class="band-verse" data-i18n="home.band.verse">"Come to me, all you who are weary and burdened, and I will give you rest."</p>
+      <p class="band-ref">Matthew 11:28</p>
+    </div>
+  </section>
+
   <!-- ===== RECENT SERMON ===== -->
   <section class="section-padding bg-white">
     <div class="container">
       <div class="narrow-lg">
-        <h2 class="section-heading text-center" data-i18n="home.sermon.heading">Recent Sermon</h2>
+        <p class="eyebrow text-center" data-i18n="home.sermon.eyebrow">Listen</p>
+      <h2 class="section-heading text-center" data-i18n="home.sermon.heading">Recent Sermon</h2>
         <p class="section-subtext text-center" data-i18n="home.sermon.sub">Catch up on our latest message from God's Word.</p>
 {{recentSermon}}
         <div class="mt-3">
@@ -78,10 +96,11 @@ bodyClass: page-home
   </section>
 
   <!-- ===== NEW HERE ===== -->
-  <section class="section-padding bg-cream">
+  <section class="section-padding bg-sage-light">
     <div class="container">
       <div class="narrow-sm text-center">
-        <h2 class="section-heading" data-i18n="home.newhere.heading">New Here?</h2>
+        <p class="eyebrow text-center" data-i18n="home.newhere.eyebrow">Join Us</p>
+      <h2 class="section-heading" data-i18n="home.newhere.heading">New Here?</h2>
         <p class="lead-text" data-i18n="home.newhere.body">We would love to meet you! Whether it is your first Sunday or you are still deciding, we want you to feel at home. Find out what to expect when you visit, where we are located, and how to get connected.</p>
         <a href="new-here.html" class="btn btn-primary-custom" data-i18n="home.hero.planVisit">Plan Your Visit</a>
       </div>

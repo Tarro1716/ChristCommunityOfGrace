@@ -10,7 +10,6 @@
   "nav.give": "Magbigay",
   "nav.contact": "Makipag-ugnayan",
   "nav.newHere": "Bago Ka Rito?",
-
   "common.serviceTimes": "Oras ng Pagsamba",
   "common.location": "Lokasyon",
   "common.getDirections": "Kumuha ng direksyon",
@@ -22,12 +21,10 @@
   "common.backHome": "Bumalik sa Home",
   "common.copy": "Kopyahin",
   "common.copied": "Nakopya!",
-
   "footer.tagline": "Isang simbahang nananalig sa Bibliya sa Calamba, Pilipinas.",
   "footer.quickLinks": "Mga Link",
   "footer.connect": "Makipag-ugnayan",
   "footer.rights": "Lahat ng karapatan ay nakalaan.",
-
   "home.hero.eyebrow": "Calamba, Laguna",
   "home.hero.title": "Maligayang pagdating sa<br>Christ Community of Grace",
   "home.hero.livestream": "Manood ng Livestream",
@@ -48,7 +45,6 @@
   "home.sermon.auto": "Awtomatikong ipinapakita rito ang aming pinakabagong upload.",
   "home.newhere.heading": "Bago Ka Rito?",
   "home.newhere.body": "Nais ka naming makilala! Una mo mang Linggo o nag-iisip ka pa lamang, gusto naming maging komportable ka. Alamin kung ano ang aasahan sa iyong pagbisita, kung saan kami matatagpuan, at kung paano makakasama sa aming komunidad.",
-
   "newhere.title": "Bago Ka Rito?",
   "newhere.sub": "Nais ka naming tanggapin ngayong Linggo. Narito ang lahat ng kailangan mong malaman bago ka pumunta.",
   "newhere.expect.heading": "Ano ang Aasahan",
@@ -72,7 +68,6 @@
   "newhere.faq.a4": "Magpakilala sa sinuman sa welcome team pagkatapos ng pagsamba, sumali sa isang small group, o magpadala ng mensahe at kami na ang lalapit sa iyo.",
   "newhere.hello.heading": "Kumustahin Kami",
   "newhere.hello.body": "May tanong bago bumisita? Magpadala ng mensahe at babalikan ka ng isa sa aming team.",
-
   "about.title": "Tungkol sa Amin",
   "about.mission.heading": "Aming Misyon",
   "about.mission.body": "Umiiral ang Christ Community of Grace upang luwalhatiin ang Diyos sa pamamagitan ng paggawa ng mga alagad ni Jesu-Cristo sa Calamba, Pilipinas at sa iba pang lugar. Nakatuon kami sa malinaw na pangangaral ng buong Kasulatan, tunay na pakikisama na nakaugat sa ebanghelyo, at paghahanda sa bawat mananampalataya na isabuhay ang kanilang pananampalataya sa tahanan, trabaho, at komunidad. Naniniwala kami na ang lokal na iglesya ang pangunahing kasangkapan ng Diyos sa pagbabago ng mga buhay, at nagpapakumbaba kaming maging bahagi ng Kanyang gawain dito sa puso ng Laguna.",
@@ -94,7 +89,6 @@
   "about.leaders.bio2": "Nagbibigay si Elder Name ng espirituwal na pangangasiwa at payo mula sa Bibliya sa kongregasyon, nakatuon sa panalangin, ministeryo ng Salita, at pangangalaga sa bawat miyembro.",
   "about.leaders.role3": "Deacon",
   "about.leaders.bio3": "Naglilingkod si Deacon Name sa mga praktikal at administratibong pangangailangan ng simbahan nang may masayang puso, sumasalamin sa paglilingkod ni Cristo.",
-
   "ministries.title": "Mga Ministeryo",
   "ministries.sub": "May lugar para sa iyo upang lumago at maglingkod.",
   "ministries.ask": "Magtanong tungkol sa ministeryong ito",
@@ -110,12 +104,10 @@
   "ministries.women.body": "Isang komunidad kung saan nagpapalakasan ang mga kababaihan sa pamamagitan ng Kasulatan, panalangin, at pakikisama.",
   "ministries.worship.title": "Worship Team",
   "ministries.worship.body": "Gumagamit ng musika at sining upang pangunahan ang kongregasyon sa taos-pusong pagsamba tuwing Linggo.",
-
   "sermons.title": "Mga Sermon",
   "sermons.sub": "Panoorin ang aming pinakabagong mga sermon at pagtuturo mula sa Bibliya.",
   "sermons.channel": "Bisitahin ang Aming YouTube Channel",
   "sermons.moreOn": "Marami pang sermon at pag-aaral ng Bibliya sa aming",
-
   "events.title": "Balita at mga Kaganapan",
   "events.upcoming": "Mga Paparating na Kaganapan",
   "events.none": "Wala pang nakatakdang kaganapan sa ngayon. Magkita tayo sa Linggo!",
@@ -128,7 +120,6 @@
   "events.ann2.body": "Interesado kang maging miyembro? Iaanunsyo na malapit na ang susunod na klase para sa mga bagong miyembro.",
   "events.ann3.title": "Mga Kahilingan sa Panalangin",
   "events.ann3.body": "Ipadala ang iyong mga kahilingan sa panalangin sa aming contact page. Lingguhang nagtitipon ang aming prayer team upang ipanalangin ang iyong mga pangangailangan.",
-
   "give.title": "Magbigay",
   "give.verse": "\"Ang bawat isa'y magbigay ayon sa ipinasiya ng kanyang puso, hindi nang may pag-aatubili o napipilitan, sapagkat iniibig ng Diyos ang nagbibigay nang masaya.\"",
   "give.intro": "Sinusuportahan ng iyong pagkabukas-palad ang ministeryo at misyon ng Christ Community of Grace. Salamat sa pakikibahagi sa gawaing ginagawa ng Diyos sa Calamba at sa iba pang lugar.",
@@ -142,7 +133,6 @@
   "give.person.title": "Personal",
   "give.person.body": "Magbigay sa aming pagsamba tuwing Linggo. May koleksyon ng handog sa gitna ng pagsamba.",
   "give.receipt": "Kailangan ng resibo o may tanong tungkol sa pagbibigay? Makipag-ugnayan sa amin sa contact page.",
-
   "contact.title": "Makipag-ugnayan",
   "contact.form.heading": "Magpadala ng Mensahe",
   "contact.form.sub": "Mga tanong, kahilingan sa panalangin, o pagbati lang. Binabasa namin ang bawat mensahe.",
@@ -152,10 +142,35 @@
   "contact.form.send": "Ipadala",
   "contact.prefer": "Mas gusto mong mag-chat?",
   "contact.visit.heading": "Bisitahin Kami",
-
   "thanks.title": "Maraming Salamat!",
   "thanks.body": "Naipadala na ang iyong mensahe. Babalikan ka ng isa sa aming team sa lalong madaling panahon.",
-
   "notfound.title": "Hindi Mahanap ang Pahina",
-  "notfound.body": "Paumanhin, hindi namin mahanap ang pahinang iyon. Maaaring inilipat na ito."
+  "notfound.body": "Paumanhin, hindi namin mahanap ang pahinang iyon. Maaaring inilipat na ito.",
+  "footer.seeYou": "Magkita tayo sa Linggo.",
+  "home.welcome.eyebrow": "Kung Sino Kami",
+  "home.events.eyebrow": "Ngayong Buwan",
+  "home.sermon.eyebrow": "Makinig",
+  "home.newhere.eyebrow": "Sumama sa Amin",
+  "home.band.verse": "\"Lumapit kayo sa akin, kayong lahat na napapagod at nabibigatan, at bibigyan ko kayo ng kapahingahan.\"",
+  "newhere.expect.eyebrow": "Ang Iyong Unang Pagbisita",
+  "newhere.note.eyebrow": "Mensahe mula sa Aming Pastor",
+  "newhere.note.body": "Maaaring malaking hakbang ang pagpasok sa isang bagong simbahan. Nais kong malaman mo na walang pamimilit dito, tanging mainit na pagtanggap. Pumunta ka kung ano ka man, dalhin ang iyong mga tanong, at hayaan mo kaming ipakita sa iyo ang pag-ibig ni Jesus. Karangalan namin kung makakasama ka namin ngayong Linggo.",
+  "newhere.location.caption": "Dito mo kami matatagpuan",
+  "newhere.faq.eyebrow": "Mabuting Malaman",
+  "newhere.hello.eyebrow": "Makipag-ugnayan",
+  "about.mission.eyebrow": "Bakit Kami Narito",
+  "about.faith.eyebrow": "Ano ang Aming Pinaniniwalaan",
+  "about.leaders.eyebrow": "Sino ang Naglilingkod Dito",
+  "ministries.eyebrow": "Makilahok",
+  "ministries.heading": "Hanapin ang Iyong Lugar",
+  "sermons.eyebrow": "Mga Bagong Mensahe",
+  "sermons.heading": "Manood at Makinig",
+  "events.eyebrow": "Paparating",
+  "events.announcements.eyebrow": "Balita ng Simbahan",
+  "events.next": "Susunod",
+  "give.eyebrow": "Pagkabukas-palad",
+  "give.heading": "Makibahagi sa Amin",
+  "give.ways.eyebrow": "Paano Magbigay",
+  "contact.form.eyebrow": "Nais Naming Marinig Ka",
+  "contact.visit.eyebrow": "Hanapin Kami"
 }
