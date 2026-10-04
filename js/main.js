@@ -183,6 +183,14 @@
       });
     }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
     revealTargets.forEach(function (el) { io.observe(el); });
+    // Safety net: if the observer has not fired for something already on screen, show it anyway.
+    setTimeout(function () {
+      revealTargets.forEach(function (el) {
+        if (!el.classList.contains('is-visible') && el.getBoundingClientRect().top < window.innerHeight) {
+          el.classList.add('is-visible');
+        }
+      });
+    }, 900);
   } else {
     revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
   }

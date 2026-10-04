@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Children's Ministry">
-              <rect width="400" height="200" fill="#c9d3c0"/>
-              <circle cx="200" cy="85" r="28" fill="#2E5339" opacity="0.6"/>
-              <line x1="200" y1="48" x2="200" y2="40" stroke="#2E5339" stroke-width="3" opacity="0.5"/>
-              <line x1="200" y1="122" x2="200" y2="130" stroke="#2E5339" stroke-width="3" opacity="0.5"/>
-              <line x1="163" y1="85" x2="155" y2="85" stroke="#2E5339" stroke-width="3" opacity="0.5"/>
-              <line x1="237" y1="85" x2="245" y2="85" stroke="#2E5339" stroke-width="3" opacity="0.5"/>
-              <line x1="174" y1="59" x2="168" y2="53" stroke="#2E5339" stroke-width="3" opacity="0.5"/>
-              <line x1="226" y1="59" x2="232" y2="53" stroke="#2E5339" stroke-width="3" opacity="0.5"/>
+              <rect width="400" height="200" fill="#D8D3C1"/>
+              <circle cx="200" cy="85" r="28" fill="#244564" opacity="0.6"/>
+              <line x1="200" y1="48" x2="200" y2="40" stroke="#244564" stroke-width="3" opacity="0.5"/>
+              <line x1="200" y1="122" x2="200" y2="130" stroke="#244564" stroke-width="3" opacity="0.5"/>
+              <line x1="163" y1="85" x2="155" y2="85" stroke="#244564" stroke-width="3" opacity="0.5"/>
+              <line x1="237" y1="85" x2="245" y2="85" stroke="#244564" stroke-width="3" opacity="0.5"/>
+              <line x1="174" y1="59" x2="168" y2="53" stroke="#244564" stroke-width="3" opacity="0.5"/>
+              <line x1="226" y1="59" x2="232" y2="53" stroke="#244564" stroke-width="3" opacity="0.5"/>
               <path d="M193,80 Q193,72 200,78 Q207,72 207,80 Q207,88 200,93 Q193,88 193,80Z" fill="white" opacity="0.8"/>
-              <text x="200" y="155" font-family="Georgia, serif" font-size="15" fill="#2E5339" text-anchor="middle" font-weight="bold">Children's Ministry</text>
+              <text x="200" y="155" font-family="Georgia, serif" font-size="15" fill="#244564" text-anchor="middle" font-weight="bold">Children's Ministry</text>
             </svg>

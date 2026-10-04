@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Church building photo placeholder">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3e9dd"/><stop offset="1" stop-color="#b4c3ab"/></linearGradient></defs>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFEBE0"/><stop offset="1" stop-color="#C6C0A6"/></linearGradient></defs>
   <rect width="600" height="400" fill="url(#g)"/>
-  <g fill="#2E5339" opacity="0.35">
+  <g fill="#244564" opacity="0.35">
     <rect x="150" y="190" width="300" height="150" rx="6"/>
     <rect x="150" y="150" width="300" height="48" rx="6"/>
     <rect x="290" y="105" width="20" height="60" rx="4"/><rect x="268" y="123" width="64" height="20" rx="4"/>
   </g>
   <g fill="#F5F1EB" opacity="0.7"><rect x="180" y="220" width="50" height="70" rx="4"/><rect x="370" y="220" width="50" height="70" rx="4"/><rect x="270" y="250" width="60" height="90" rx="4"/></g>
-  <rect x="0" y="340" width="600" height="60" fill="#9fb096" opacity="0.5"/>
+  <rect x="0" y="340" width="600" height="60" fill="#B3AC90" opacity="0.5"/>
 </svg>

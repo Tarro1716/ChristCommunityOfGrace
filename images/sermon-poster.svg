@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Latest sermon">
-<rect width="640" height="360" fill="#2E5339"/>
+<rect width="640" height="360" fill="#244564"/>
 <rect x="0" y="0" width="640" height="360" fill="url(#g)"/>
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b6a49"/><stop offset="1" stop-color="#1f3a27"/></linearGradient></defs>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F557A"/><stop offset="1" stop-color="#182C42"/></linearGradient></defs>
 <rect x="306" y="100" width="28" height="120" rx="5" fill="#F5F1EB" opacity="0.9"/>
 <rect x="272" y="130" width="96" height="28" rx="5" fill="#F5F1EB" opacity="0.9"/>
 <text x="320" y="285" font-family="Georgia, serif" font-size="30" fill="#F5F1EB" text-anchor="middle">Latest Sermon</text>

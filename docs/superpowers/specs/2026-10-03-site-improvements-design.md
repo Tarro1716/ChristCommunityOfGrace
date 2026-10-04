@@ -63,6 +63,21 @@ Accent colour for text links darkens to `#9E5238` (5.0:1 on cream); buttons use 
 
 `new-here.html` (what to expect, times, directions, kids, FAQ, say hello), `thanks.html`, `404.html`. Footer year set by script. Open Graph image is an absolute URL built from `site.url`.
 
+## Palette (updated 2026-10-04)
+
+Colours now come from the church logo so the brand is consistent across the site, Facebook and print.
+
+| Role | Hex | Source / check |
+|---|---|---|
+| Primary | `#244564` | logo navy; 9.9:1 with white text |
+| Deep band | `#182C42` | darker navy |
+| Accent (buttons) | `#93693A` | bronze; 4.9:1 with white text |
+| Accent (text links) | `#8A6236` | bronze; 5.0:1 on cream |
+| Accent (decorative) | `#C8A983` | logo bronze |
+| Cream background | `#F9F4F1` | logo background |
+| Sand | `#C6C0A6` / `#EEEAE0` | logo rays; tiles and band tint |
+| Headings | `#1E3147` | navy-tinted near-black |
+
 ## Out of scope
 
 CMS, server-side code, translating church-authored data content, Tagalog review by a native speaker (flagged in README).

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Men's Ministry">
-              <rect width="400" height="200" fill="#c9d3c0"/>
-              <path d="M200,50 L240,70 L240,105 Q240,135 200,150 Q160,135 160,105 L160,70 Z" fill="#2E5339" opacity="0.65"/>
+              <rect width="400" height="200" fill="#D8D3C1"/>
+              <path d="M200,50 L240,70 L240,105 Q240,135 200,150 Q160,135 160,105 L160,70 Z" fill="#244564" opacity="0.65"/>
               <rect x="196" y="72" width="8" height="52" rx="2" fill="white" opacity="0.85"/>
               <rect x="178" y="88" width="44" height="8" rx="2" fill="white" opacity="0.85"/>
-              <text x="200" y="175" font-family="Georgia, serif" font-size="15" fill="#2E5339" text-anchor="middle" font-weight="bold">Men's Ministry</text>
+              <text x="200" y="175" font-family="Georgia, serif" font-size="15" fill="#244564" text-anchor="middle" font-weight="bold">Men's Ministry</text>
             </svg>

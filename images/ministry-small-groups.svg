@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Small Groups">
-              <rect width="400" height="200" fill="#c9d3c0"/>
-              <circle cx="200" cy="90" r="18" fill="#2E5339" opacity="0.7"/>
-              <circle cx="160" cy="120" r="18" fill="#2E5339" opacity="0.6"/>
-              <circle cx="240" cy="120" r="18" fill="#2E5339" opacity="0.6"/>
-              <circle cx="145" cy="80" r="14" fill="#2E5339" opacity="0.5"/>
-              <circle cx="255" cy="80" r="14" fill="#2E5339" opacity="0.5"/>
+              <rect width="400" height="200" fill="#D8D3C1"/>
+              <circle cx="200" cy="90" r="18" fill="#244564" opacity="0.7"/>
+              <circle cx="160" cy="120" r="18" fill="#244564" opacity="0.6"/>
+              <circle cx="240" cy="120" r="18" fill="#244564" opacity="0.6"/>
+              <circle cx="145" cy="80" r="14" fill="#244564" opacity="0.5"/>
+              <circle cx="255" cy="80" r="14" fill="#244564" opacity="0.5"/>
               <rect x="187" y="78" width="26" height="20" rx="2" fill="white" opacity="0.8"/>
-              <line x1="200" y1="78" x2="200" y2="98" stroke="#2E5339" stroke-width="1.5"/>
-              <text x="200" y="175" font-family="Georgia, serif" font-size="15" fill="#2E5339" text-anchor="middle" font-weight="bold">Small Groups</text>
+              <line x1="200" y1="78" x2="200" y2="98" stroke="#244564" stroke-width="1.5"/>
+              <text x="200" y="175" font-family="Georgia, serif" font-size="15" fill="#244564" text-anchor="middle" font-weight="bold">Small Groups</text>
             </svg>
