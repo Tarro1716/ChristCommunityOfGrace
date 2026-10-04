@@ -78,6 +78,22 @@ test('events and sermons from data files are rendered', () => {
   assert.match(read('index.html'), /class="yt-lite/);
 });
 
+test('statement of faith renders every section, and the About accordion links to each', () => {
+  const sof = JSON.parse(read('data/statement-of-faith.json'));
+  const page = read('statement-of-faith.html');
+  const about = read('about.html');
+  assert.equal(sof.sections.length, 12);
+  for (const s of sof.sections) {
+    assert.ok(page.includes(`<span class="sof-numeral">${s.numeral}.</span>`), `statement page lacks section ${s.numeral}`);
+  }
+  assert.equal((about.match(/class="accordion-item"/g) || []).length, 12);
+  assert.equal((about.match(/href="statement-of-faith\.html#sof-/g) || []).length, 12);
+  assert.match(page, /href="files\/CCG-Statement-of-Faith\.pdf"/);
+  assert.ok(fs.existsSync(path.join(root, 'files/CCG-Statement-of-Faith.pdf')));
+  // Every accordion item has a summary paragraph
+  assert.equal((about.match(/<div class="accordion-body">\s*<p/g) || []).length, 12);
+});
+
 test('empty contact channels are hidden, filled ones shown', () => {
   const cfg = JSON.parse(read('site.config.json'));
   const html = read('contact.html');

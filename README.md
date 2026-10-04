@@ -11,6 +11,7 @@ Static website for Christ Community of Grace, Calamba, Laguna. Plain HTML, CSS a
 | Church details: address, service times, phone, email, Facebook, Messenger, YouTube, GCash, bank, contact-form key | `site.config.json` |
 | Upcoming events | `data/events.json` |
 | Sermon videos | `data/sermons.json` — or run `npm run fetch-sermons` to pull the latest from YouTube |
+| Statement of Faith text | `data/statement-of-faith.json` (and the PDF in `files/`) |
 | Page wording (English) | `src/pages/<page>.html` **and** the same key in `lang/en.json` |
 | Tagalog translation | `lang/tl.json` |
 | Header, footer, `<head>` | `src/layout.html` |
@@ -50,6 +51,20 @@ The site knows the channel through `youtube.channelId` in `site.config.json`. Fr
 - The GitHub Action in `.github/workflows/update-sermons.yml` does both every Monday morning and commits the result, so the Sermons page refreshes itself once the repo is on GitHub. Run it manually from the Actions tab any time.
 
 To edit a title or add a description by hand, change `data/sermons.json`; the next weekly run will overwrite it with the feed's version, so make lasting fixes on YouTube itself.
+
+## Statement of Faith
+
+The full statement lives in `data/statement-of-faith.json` and is rendered into `statement-of-faith.html` (full text with a table of contents) and the About page accordion (opening paragraph of each section). The downloadable PDF is `files/CCG-Statement-of-Faith.pdf`.
+
+If the church issues a revised PDF, replace the file and regenerate the data:
+
+```bash
+pip install pypdf
+python3 tools/pdf-to-statement.py files/CCG-Statement-of-Faith.pdf
+npm test
+```
+
+Then skim the result. The converter recognises the document's numbered sections, lettered subsections, bullet lists and book lists; an unusual layout may need a hand fix in the JSON. Scripture references in parentheses are styled automatically. Paragraphs beginning "We reject" are set off visually. The statement is church-authored content and is shown in English only.
 
 ## Language toggle
 

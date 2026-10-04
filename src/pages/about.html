@@ -23,47 +23,13 @@ bodyClass: page-about
     <div class="container">
       <p class="eyebrow text-center" data-i18n="about.faith.eyebrow">What We Believe</p>
       <h2 class="section-heading text-center mb-5" data-i18n="about.faith.heading">Statement of Faith</h2>
+      <p class="lead-text text-center mb-4" data-i18n="about.faith.intro">Our Statement of Faith sets out, section by section, what we believe and the Scriptures that teach it. Open a section for a summary, or read the whole statement.</p>
       <div class="accordion narrow-lg" id="statementOfFaithAccordion">
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBible" aria-expanded="true" aria-controls="collapseBible" data-i18n="about.faith.bible.title">The Bible</button>
-          </h3>
-          <div id="collapseBible" class="accordion-collapse collapse show" data-bs-parent="#statementOfFaithAccordion">
-            <div class="accordion-body" data-i18n="about.faith.bible.body">We believe the Bible, both the Old and New Testaments, is the inspired, inerrant, and infallible Word of God. It is the supreme and final authority in all matters of faith and practice. Written by human authors under the supernatural guidance of the Holy Spirit, Scripture is fully trustworthy and sufficient to equip every believer for every good work (2 Timothy 3:16–17).</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGod" aria-expanded="false" aria-controls="collapseGod" data-i18n="about.faith.god.title">God</button>
-          </h3>
-          <div id="collapseGod" class="accordion-collapse collapse" data-bs-parent="#statementOfFaithAccordion">
-            <div class="accordion-body" data-i18n="about.faith.god.body">We believe in one eternal, sovereign God who exists as three distinct Persons, Father, Son, and Holy Spirit, co-equal and co-eternal, sharing the same divine nature and glory. God is holy, just, loving, and all-powerful. He is the Creator and Sustainer of all things, and He works all things according to the counsel of His perfect will (Deuteronomy 6:4; Matthew 28:19; 2 Corinthians 13:14).</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSalvation" aria-expanded="false" aria-controls="collapseSalvation" data-i18n="about.faith.salvation.title">Salvation</button>
-          </h3>
-          <div id="collapseSalvation" class="accordion-collapse collapse" data-bs-parent="#statementOfFaithAccordion">
-            <div class="accordion-body" data-i18n="about.faith.salvation.body">We believe that all people are sinners by nature and by choice, and are in need of God's saving grace. Salvation is entirely the work of God, given by grace alone, through faith alone, in Christ alone. Jesus Christ, the eternal Son of God, became flesh, lived a sinless life, died as the atoning sacrifice for sin, and rose bodily from the dead. All who repent and trust in Him receive forgiveness, righteousness, and eternal life (Ephesians 2:8–9; Romans 3:23–24; John 3:16).</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChurch" aria-expanded="false" aria-controls="collapseChurch" data-i18n="about.faith.church.title">The Church</button>
-          </h3>
-          <div id="collapseChurch" class="accordion-collapse collapse" data-bs-parent="#statementOfFaithAccordion">
-            <div class="accordion-body" data-i18n="about.faith.church.body">We believe the church is the body of Christ, a community of redeemed believers who have been called out of the world to worship God, build one another up in love, and bear witness to the gospel. The local church gathers regularly for the preaching of the Word, the practice of the ordinances (baptism and the Lord's Supper), prayer, and fellowship. Every believer is gifted by the Spirit for service within the body and the world (Matthew 16:18; Ephesians 4:11–16; Acts 2:42–47).</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReturn" aria-expanded="false" aria-controls="collapseReturn" data-i18n="about.faith.return.title">The Return of Christ</button>
-          </h3>
-          <div id="collapseReturn" class="accordion-collapse collapse" data-bs-parent="#statementOfFaithAccordion">
-            <div class="accordion-body" data-i18n="about.faith.return.body">We believe in the personal, bodily, and glorious return of Jesus Christ. He will come again to consummate His kingdom, judge the living and the dead, and make all things new. Believers await His return with hope and expectancy, living faithfully in the present age. Those who are in Christ will enjoy eternal life in His presence, while those who have rejected Him will face eternal judgment (Acts 1:11; 1 Thessalonians 4:16–17; Revelation 21:1–5).</div>
-          </div>
-        </div>
+{{faithAccordion}}
+      </div>
+      <div class="text-center mt-4 d-flex flex-wrap justify-content-center gap-2">
+        <a href="statement-of-faith.html" class="btn btn-primary-custom" data-i18n="about.faith.readFull">Read the full Statement of Faith</a>
+        <a href="files/CCG-Statement-of-Faith.pdf" class="btn btn-outline-primary-custom" download data-i18n="common.downloadPdf">Download PDF</a>
       </div>
     </div>
   </section>

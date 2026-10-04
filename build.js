@@ -17,6 +17,7 @@ const readJSON = (p) => JSON.parse(read(p));
 const site = readJSON('site.config.json');
 const events = readJSON('data/events.json');
 const sermons = readJSON('data/sermons.json');
+const statement = readJSON('data/statement-of-faith.json');
 const en = readJSON('lang/en.json');
 const tl = readJSON('lang/tl.json');
 const layout = read('src/layout.html');
@@ -153,7 +154,82 @@ function recentSermon() {
         ${s.description ? `<p class="small-text">${esc(s.description)}</p>` : ''}`;
 }
 
+// ---------- Statement of Faith ----------
+const slug = (t) => t.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const REF = /\(([^()]*\d+:\d+[^()]*)\)/g;
+/** Escape, then set scripture references in a muted span. */
+const sofText = (t) => esc(t).replace(REF, '<span class="ref">($1)</span>');
+const sofPara = (t) => `<p${/^We (reject|do not accept)/.test(t) ? ' class="reject"' : ''}>${sofText(t)}</p>`;
+
+function sofBlocks(blocks, sectionId) {
+  return blocks.map((b) => {
+    if (b.type === 'p') return sofPara(b.text);
+    if (b.type === 'h') return `<h4 class="sof-minor">${esc(b.text)}</h4>`;
+    if (b.type === 'ul' || b.type === 'ol') {
+      const cls = b.items.length >= 10 ? ' class="sof-cols"' : '';
+      return `<${b.type}${cls}>${b.items.map((i) => `<li>${sofText(i)}</li>`).join('')}</${b.type}>`;
+    }
+    if (b.type === 'sub') {
+      const id = `${sectionId}-${slug(b.title)}`;
+      return `<div class="sof-sub" id="${id}"><h3><span class="sof-letter">${esc(b.letter)}.</span> ${esc(b.title)}</h3>${sofBlocks(b.blocks, sectionId)}</div>`;
+    }
+    return '';
+  }).join('\n');
+}
+
+function statementBody() {
+  return statement.sections.map((s) => {
+    const id = `sof-${slug(s.title)}`;
+    return `<section class="sof-section" id="${id}">
+  <h2><span class="sof-numeral">${esc(s.numeral)}.</span> ${esc(s.title)}</h2>
+${sofBlocks(s.blocks, id)}
+</section>`;
+  }).join('\n');
+}
+
+function statementToc() {
+  const items = statement.sections.map((s) => {
+    const id = `sof-${slug(s.title)}`;
+    const subs = s.blocks.filter((b) => b.type === 'sub');
+    const subList = subs.length
+      ? `<ol class="sof-toc-sub">${subs.map((b) => `<li><a href="#${id}-${slug(b.title)}">${esc(b.title)}</a></li>`).join('')}</ol>`
+      : '';
+    return `<li><a href="#${id}"><span class="sof-numeral">${esc(s.numeral)}.</span> ${esc(s.title)}</a>${subList}</li>`;
+  });
+  return `<ol class="sof-toc-list">${items.join('')}</ol>`;
+}
+
+/** About page: one accordion item per section with its opening paragraph. */
+function faithAccordion() {
+  return statement.sections.map((s, i) => {
+    const id = `sof-${slug(s.title)}`;
+    const firstPara = (blocks) => {
+      for (const b of blocks) {
+        if (b.type === 'p') return b;
+        if (b.type === 'sub') { const inner = firstPara(b.blocks); if (inner) return inner; }
+      }
+      return null;
+    };
+    const first = firstPara(s.blocks);
+    const open = i === 0;
+    return `        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button${open ? '' : ' collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#faith-${i}" aria-expanded="${open}" aria-controls="faith-${i}"><span class="sof-numeral me-2">${esc(s.numeral)}.</span>${esc(s.title)}</button>
+          </h3>
+          <div id="faith-${i}" class="accordion-collapse collapse${open ? ' show' : ''}" data-bs-parent="#statementOfFaithAccordion">
+            <div class="accordion-body">
+              ${first ? sofPara(first.text) : ''}
+              <a class="link-accent" href="statement-of-faith.html#${id}"><span data-i18n="about.faith.readSection">Read the full section</span> &rarr;</a>
+            </div>
+          </div>
+        </div>`;
+  }).join('\n');
+}
+
 const fragments = {
+  statementBody: statementBody(),
+  statementToc: statementToc(),
+  faithAccordion: faithAccordion(),
   iconSprite: iconSprite(),
   serviceTimesList: serviceTimesList(),
   serviceTimesInline: serviceTimesInline(),

@@ -402,3 +402,37 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 
 /* Contact form captcha */
 .captcha-box .form-text { color: var(--color-text-muted); font-size: 0.85rem; margin-top: 0.5rem; }
+
+/* ===== Statement of Faith ===== */
+.sof-numeral, .sof-letter { color: var(--color-accent-text); font-family: var(--font-heading); font-weight: 400; }
+.sof-toc { background: var(--color-bg-cream); border-radius: var(--radius); padding: 1.25rem; }
+.sof-toc-heading { font-size: 1.1rem; margin-bottom: 0.75rem; }
+.sof-toc-list, .sof-toc-sub { list-style: none; padding: 0; margin: 0; }
+.sof-toc-list > li { padding: 0.3rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.sof-toc-list > li:last-child { border-bottom: 0; }
+.sof-toc a { color: var(--color-text-dark); text-decoration: none; font-weight: 500; }
+.sof-toc a:hover { color: var(--color-accent-text); text-decoration: underline; }
+.sof-toc-sub { margin: 0.2rem 0 0.25rem 1.6rem; }
+.sof-toc-sub li { padding: 0.1rem 0; }
+.sof-toc-sub a { font-weight: 400; font-size: 0.9rem; color: var(--color-text-muted); }
+.sof-body { max-width: 72ch; }
+.sof-section { padding-top: 0.5rem; margin-bottom: 3rem; scroll-margin-top: calc(var(--nav-height) + 1rem); }
+.sof-section h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--color-accent-soft); }
+.sof-sub { margin-top: 2rem; scroll-margin-top: calc(var(--nav-height) + 1rem); }
+.sof-sub h3 { font-size: 1.35rem; margin-bottom: 0.75rem; }
+.sof-minor { font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em; color: var(--color-text-muted); margin: 1.25rem 0 0.5rem; }
+.sof-body p, .sof-body li { line-height: 1.8; color: var(--color-text-body); }
+.sof-body p { margin-bottom: 1rem; }
+.sof-body .ref { color: var(--color-text-muted); font-size: 0.92em; }
+.sof-body .reject, .accordion-body .reject { border-left: 3px solid var(--color-accent-soft); background: var(--color-sage-light); padding: 0.75rem 1rem; border-radius: 0 8px 8px 0; }
+.accordion-body .reject { margin-bottom: 0.75rem; }
+.sof-cols { padding-left: 1.25rem; }
+@media (min-width: 576px) { .sof-cols { columns: 2; column-gap: 2.5rem; } .sof-cols li { break-inside: avoid; } }
+@media (min-width: 992px) {
+  .sof-toc { position: sticky; top: calc(var(--nav-height) + 1rem); max-height: calc(100vh - var(--nav-height) - 2rem); overflow: auto; }
+}
+
+.sof-toc-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; background: none; border: 0; padding: 0; font-family: var(--font-heading); font-size: 1.1rem; color: var(--color-heading); }
+.sof-toc-toggle .icon { transition: transform 0.3s; }
+.sof-toc-toggle[aria-expanded="true"] .icon { transform: rotate(90deg); }
+@media (max-width: 991.98px) { #sofTocList.show, #sofTocList.collapsing { margin-top: 0.75rem; } }

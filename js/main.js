@@ -195,6 +195,16 @@
     revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
+  // ---------- Statement of Faith: close the mobile contents list after choosing a section ----------
+  var tocList = document.getElementById('sofTocList');
+  if (tocList) {
+    tocList.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (window.innerWidth < 992 && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(tocList).hide();
+      });
+    });
+  }
+
   // ---------- 7. Footer year ----------
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
