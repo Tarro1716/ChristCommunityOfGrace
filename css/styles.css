@@ -393,3 +393,9 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 /* Sermons: latest-upload player */
 .latest-player { margin-bottom: 1rem; }
 .latest-player .yt-lite { box-shadow: var(--shadow-md); }
+
+/* Contact: Messenger first */
+.messenger-card { display: flex; gap: 1rem; align-items: flex-start; background: var(--color-sage-light); border-radius: var(--radius); padding: 1.25rem; border-left: 4px solid var(--color-accent-soft); }
+.messenger-card .icon-xl { color: var(--color-primary); flex-shrink: 0; width: 2.25rem; height: 2.25rem; margin-top: 0.1rem; }
+.or-divider { display: flex; align-items: center; gap: 1rem; color: var(--color-text-muted); font-size: 0.9rem; margin: 1.5rem 0 1.25rem; }
+.or-divider::before, .or-divider::after { content: ''; flex: 1; height: 1px; background: #e3dccf; }

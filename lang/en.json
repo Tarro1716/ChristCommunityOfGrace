@@ -176,5 +176,9 @@
   "sermons.latestEyebrow": "Just Uploaded",
   "sermons.latestHeading": "Latest Message",
   "sermons.latestSub": "Press play to watch our most recent upload. The whole channel is in the playlist.",
-  "sermons.autoNote": "This list refreshes from our YouTube channel every week."
+  "sermons.autoNote": "This list refreshes from our YouTube channel every week.",
+  "contact.reach.heading": "Reach Us",
+  "contact.messenger.heading": "Fastest: message us on Facebook",
+  "contact.messenger.body": "Opens Messenger with our church page. We usually reply within the day.",
+  "contact.orEmail": "or send an email"
 }

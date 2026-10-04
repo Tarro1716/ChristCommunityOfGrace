@@ -81,7 +81,8 @@ test('events and sermons from data files are rendered', () => {
 test('empty contact channels are hidden, filled ones shown', () => {
   const cfg = JSON.parse(read('site.config.json'));
   const html = read('contact.html');
-  if (!cfg.contact.facebook) assert.doesNotMatch(html, /facebook\.com/);
+  if (cfg.contact.facebook) assert.match(html, /facebook\.com/); else assert.doesNotMatch(html, /facebook\.com/);
+  if (cfg.contact.messenger) assert.match(html, /m\.me\//); else assert.doesNotMatch(html, /m\.me\//);
   if (!cfg.contact.phone) assert.doesNotMatch(html, /href="tel:/);
 });
 
