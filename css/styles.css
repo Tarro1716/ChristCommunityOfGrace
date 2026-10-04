@@ -389,3 +389,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .home-hero-image img { animation: none; }
   .card-custom .card-title, .accordion-button { transition: none; }
 }
+
+/* Sermons: latest-upload player */
+.latest-player { margin-bottom: 1rem; }
+.latest-player .yt-lite { box-shadow: var(--shadow-md); }

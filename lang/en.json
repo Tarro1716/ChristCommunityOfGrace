@@ -172,5 +172,9 @@
   "give.heading": "Partner With Us",
   "give.ways.eyebrow": "How to Give",
   "contact.form.eyebrow": "We'd Love to Hear From You",
-  "contact.visit.eyebrow": "Find Us"
+  "contact.visit.eyebrow": "Find Us",
+  "sermons.latestEyebrow": "Just Uploaded",
+  "sermons.latestHeading": "Latest Message",
+  "sermons.latestSub": "Press play to watch our most recent upload. The whole channel is in the playlist.",
+  "sermons.autoNote": "This list refreshes from our YouTube channel every week."
 }

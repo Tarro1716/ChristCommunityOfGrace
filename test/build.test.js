@@ -70,7 +70,10 @@ test('events and sermons from data files are rendered', () => {
   const ev = read('events.html');
   for (const e of events) assert.ok(ev.includes(`data-date="${e.date}"`), `event ${e.date} missing`);
   const se = read('sermons.html');
-  assert.equal((se.match(/class="yt-lite ratio/g) || []).length, sermons.length);
+  const cfg = JSON.parse(read('site.config.json'));
+  const hasPlaylist = Boolean(cfg.youtube.uploadsPlaylist || cfg.youtube.channelId);
+  assert.equal((se.match(/class="yt-lite ratio/g) || []).length, sermons.length + (hasPlaylist ? 1 : 0));
+  if (hasPlaylist) assert.match(se, /data-list="UU/, 'sermons page should embed the uploads playlist');
   assert.doesNotMatch(se, /<iframe[^>]*youtube\.com\/embed/, 'sermons page should not eager-load YouTube iframes');
   assert.match(read('index.html'), /class="yt-lite/);
 });

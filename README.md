@@ -10,7 +10,7 @@ Static website for Christ Community of Grace, Calamba, Laguna. Plain HTML, CSS a
 |---|---|
 | Church details: address, service times, phone, email, Facebook, Messenger, YouTube, GCash, bank, contact-form key | `site.config.json` |
 | Upcoming events | `data/events.json` |
-| Sermon videos | `data/sermons.json` |
+| Sermon videos | `data/sermons.json` — or run `npm run fetch-sermons` to pull the latest from YouTube |
 | Page wording (English) | `src/pages/<page>.html` **and** the same key in `lang/en.json` |
 | Tagalog translation | `lang/tl.json` |
 | Header, footer, `<head>` | `src/layout.html` |
@@ -39,6 +39,16 @@ All in `site.config.json`:
 - `url`: the site's public address, used for social-share tags and the contact-form redirect.
 
 Also replace the placeholder images in `images/` (hero photo, leader photos, ministry pictures) and the sample video IDs in `data/sermons.json`.
+
+## Sermons from YouTube
+
+The site knows the channel through `youtube.channelId` in `site.config.json`. From that it derives the uploads playlist, so:
+
+- The homepage "Recent Sermon" and the player at the top of the Sermons page always play the newest upload. No edits needed.
+- `npm run fetch-sermons` reads the channel's public feed (no API key) and rewrites `data/sermons.json` with the latest 12 videos, titles and dates. Then `npm test` rebuilds.
+- The GitHub Action in `.github/workflows/update-sermons.yml` does both every Monday morning and commits the result, so the Sermons page refreshes itself once the repo is on GitHub. Run it manually from the Actions tab any time.
+
+To edit a title or add a description by hand, change `data/sermons.json`; the next weekly run will overwrite it with the feed's version, so make lasting fixes on YouTube itself.
 
 ## Language toggle
 

@@ -41,6 +41,9 @@ const icon = (name, cls = 'icon') => `<svg class="${cls}" aria-hidden="true"><us
 
 // ---------- computed values ----------
 const mapQuery = encodeURIComponent(site.address.mapQuery);
+// The channel's uploads playlist is its channel ID with "UC" swapped for "UU". It always holds the newest upload.
+const uploadsPlaylist = site.youtube.uploadsPlaylist
+  || (site.youtube.channelId && site.youtube.channelId.startsWith('UC') ? 'UU' + site.youtube.channelId.slice(2) : '');
 const computed = {
   year: String(new Date().getFullYear()),
   directionsUrl: `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`,
@@ -128,9 +131,19 @@ function sermonsGrid() {
         </div>`).join('\n');
 }
 
+function latestPlayer() {
+  if (!uploadsPlaylist) return '';
+  return `      <div class="latest-player">
+        <p class="eyebrow text-center" data-i18n="sermons.latestEyebrow">Just Uploaded</p>
+        <h2 class="section-heading text-center" data-i18n="sermons.latestHeading">Latest Message</h2>
+        <p class="section-subtext text-center" data-i18n="sermons.latestSub">Press play to watch our most recent upload. The whole channel is in the playlist.</p>
+        ${ytLite({ list: uploadsPlaylist, title: 'Latest sermon', poster: 'images/sermon-poster.svg' })}
+      </div>`;
+}
+
 function recentSermon() {
-  if (site.youtube.uploadsPlaylist) {
-    return `        ${ytLite({ list: site.youtube.uploadsPlaylist, title: 'Latest sermon', poster: 'images/sermon-poster.svg' })}
+  if (uploadsPlaylist) {
+    return `        ${ytLite({ list: uploadsPlaylist, title: 'Latest sermon', poster: 'images/sermon-poster.svg' })}
         <p class="text-muted mt-3" data-i18n="home.sermon.auto">Our newest upload plays here automatically.</p>`;
   }
   const s = sermons[0];
@@ -148,6 +161,7 @@ const fragments = {
   eventsList: eventsList(),
   sermonsGrid: sermonsGrid(),
   recentSermon: recentSermon(),
+  latestPlayer: latestPlayer(),
 };
 const RAW = new Set([...Object.keys(fragments), 'content', 'robotsMeta']);
 

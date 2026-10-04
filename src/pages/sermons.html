@@ -12,7 +12,10 @@ bodyClass: page-sermons
 
   <section class="section-padding bg-white">
     <div class="container">
-      <div class="narrow text-center">
+      <div class="narrow-lg">
+{{latestPlayer}}
+      </div>
+      <div class="narrow text-center mt-4">
         <a href="{{site.youtube.channel}}" target="_blank" rel="noopener" class="btn btn-accent">
           <svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg>
           <span data-i18n="sermons.channel">Visit Our YouTube Channel</span>
@@ -28,7 +31,8 @@ bodyClass: page-sermons
   <section class="section-padding bg-cream">
     <div class="container">
       <p class="eyebrow text-center" data-i18n="sermons.eyebrow">Recent Messages</p>
-      <h2 class="section-heading text-center mb-5" data-i18n="sermons.heading">Watch and Listen</h2>
+      <h2 class="section-heading text-center" data-i18n="sermons.heading">Watch and Listen</h2>
+      <p class="section-subtext text-center" data-i18n="sermons.autoNote">This list refreshes from our YouTube channel every week.</p>
       <div class="row g-4">
 {{sermonsGrid}}
       </div>
