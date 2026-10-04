@@ -74,8 +74,11 @@ address { font-style: normal; }
   color: var(--color-primary) !important;
   line-height: 1.2;
   white-space: normal;
-  max-width: calc(100vw - 140px); /* leave room for the language and menu buttons on one row */
   margin-right: 0.25rem;
+}
+@media (max-width: 991.98px) {
+  /* Take whatever room is left beside the language and menu buttons, so the row never wraps */
+  .navbar-brand { flex: 1 1 0; min-width: 0; }
 }
 @media (max-width: 575.98px) { .brand-mark { height: 32px; } .navbar-brand { gap: 0.4rem; line-height: 1.1; } }
 .navbar-toggler { padding: 0.4rem 0.5rem; }
@@ -321,7 +324,6 @@ address { font-style: normal; }
 @media (min-width: 992px) {
   .section-padding { padding: 5rem 0; }
   .page-hero { padding: 4rem 0; }
-  .navbar-brand { max-width: none; }
   .home-hero .row { min-height: min(82vh, 760px); }
   .home-hero-image { height: auto; min-height: 100%; max-height: none; }
   .home-hero-text { padding: 4rem 3.5rem; }
