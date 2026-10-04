@@ -399,3 +399,6 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .messenger-card .icon-xl { color: var(--color-primary); flex-shrink: 0; width: 2.25rem; height: 2.25rem; margin-top: 0.1rem; }
 .or-divider { display: flex; align-items: center; gap: 1rem; color: var(--color-text-muted); font-size: 0.9rem; margin: 1.5rem 0 1.25rem; }
 .or-divider::before, .or-divider::after { content: ''; flex: 1; height: 1px; background: #e3dccf; }
+
+/* Contact form captcha */
+.captcha-box .form-text { color: var(--color-text-muted); font-size: 0.85rem; margin-top: 0.5rem; }

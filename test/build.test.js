@@ -86,11 +86,31 @@ test('empty contact channels are hidden, filled ones shown', () => {
   if (!cfg.contact.phone) assert.doesNotMatch(html, /href="tel:/);
 });
 
-test('contact form has honeypot and redirect', () => {
+test('contact form has honeypot, redirect, length limits and captcha', () => {
   const html = read('contact.html');
+  const cfg = JSON.parse(read('site.config.json'));
   assert.match(html, /name="botcheck"/);
   assert.match(html, /name="redirect"/);
+  assert.match(html, /name="message"[^>]*maxlength=/);
+  if (cfg.contactFormCaptcha) {
+    assert.match(html, /class="h-captcha" data-captcha="true"/);
+    assert.match(html, /web3forms\.com\/client\/script\.js/);
+  }
   assert.ok(fs.existsSync(path.join(root, 'thanks.html')));
+});
+
+test('third-party assets are integrity-checked and external links are safe', () => {
+  for (const p of pages) {
+    const html = read(p);
+    for (const tag of html.match(/<(?:link|script)[^>]+cdn\.jsdelivr\.net[^>]*\.(?:css|js)"[^>]*>/g) || []) {
+      assert.match(tag, /integrity="sha384-/, `${p}: ${tag.slice(0, 80)} lacks integrity`);
+      assert.match(tag, /crossorigin="anonymous"/, `${p}: CDN tag lacks crossorigin`);
+    }
+    for (const tag of html.match(/<a [^>]*target="_blank"[^>]*>/g) || []) {
+      assert.match(tag, /rel="noopener noreferrer"/, `${p}: ${tag.slice(0, 80)} lacks rel`);
+    }
+    assert.match(html, /<meta name="referrer"/, `${p}: no referrer policy`);
+  }
 });
 
 test('map uses the configured address, directions open Google Maps and Waze', () => {

@@ -180,5 +180,6 @@
   "contact.reach.heading": "Reach Us",
   "contact.messenger.heading": "Fastest: message us on Facebook",
   "contact.messenger.body": "Opens Messenger with our church page. We usually reply within the day.",
-  "contact.orEmail": "or send an email"
+  "contact.orEmail": "or send an email",
+  "contact.form.captchaNote": "A quick check to keep out spam. We never share your details."
 }

@@ -55,11 +55,11 @@ bodyClass: page-new-here
             <h2 class="side-card-heading mt-4" data-i18n="common.location">Location</h2>
             <address class="mb-3">{{site.address.line1}}<br>{{site.address.line2}}</address>
             <div class="d-grid gap-2">
-              <a class="btn btn-primary-custom" href="{{directionsUrl}}" target="_blank" rel="noopener">
+              <a class="btn btn-primary-custom" href="{{directionsUrl}}" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
                 <span data-i18n="common.openGoogleMaps">Open in Google Maps</span>
               </a>
-              <a class="btn btn-outline-primary-custom" href="{{wazeUrl}}" target="_blank" rel="noopener">
+              <a class="btn btn-outline-primary-custom" href="{{wazeUrl}}" target="_blank" rel="noopener noreferrer">
                 <span data-i18n="common.openWaze">Open in Waze</span>
               </a>
             </div>
@@ -145,7 +145,7 @@ bodyClass: page-new-here
       <h2 class="section-heading" data-i18n="newhere.hello.heading">Say Hello</h2>
         <p class="lead-text" data-i18n="newhere.hello.body">Have a question before you visit? Send us a message and someone from our team will get back to you.</p>
         <div class="d-flex flex-wrap justify-content-center gap-2">
-          {{#if site.contact.messenger}}<a href="{{site.contact.messenger}}" target="_blank" rel="noopener" class="btn btn-accent"><svg class="icon" aria-hidden="true"><use href="#i-messenger"/></svg> <span data-i18n="common.messageUs">Message us on Messenger</span></a>{{/if}}
+          {{#if site.contact.messenger}}<a href="{{site.contact.messenger}}" target="_blank" rel="noopener noreferrer" class="btn btn-accent"><svg class="icon" aria-hidden="true"><use href="#i-messenger"/></svg> <span data-i18n="common.messageUs">Message us on Messenger</span></a>{{/if}}
           <a href="contact.html" class="btn btn-primary-custom" data-i18n="common.contactUs">Contact Us</a>
         </div>
       </div>

@@ -35,7 +35,8 @@ All in `site.config.json`:
 - `youtube.channel` and `youtube.livestream`. The current handle returns a 404 on YouTube, so check the channel URL.
 - `youtube.uploadsPlaylist`: the channel's uploads playlist ID. It is the channel ID with the leading `UC` changed to `UU`. Once set, the homepage "Recent Sermon" always shows the newest upload with no edits.
 - `giving.gcash.number`, `giving.bank.accountNumber`, and optionally `giving.gcash.qrImage` (for example `images/gcash-qr.png`).
-- `contactFormKey`: a free access key from https://web3forms.com. Messages are emailed to the address you register there.
+- `contactFormKey`: a free access key from https://web3forms.com. Messages are emailed to the address you register there. In the Web3Forms dashboard, restrict the key to the site's domain so nobody can reuse it from another website.
+- `contactFormCaptcha`: `true` shows an hCaptcha check on the form (no keys needed; Web3Forms provides it). Set to `false` to remove it.
 - `url`: the site's public address, used for social-share tags and the contact-form redirect.
 
 Also replace the placeholder images in `images/` (hero photo, leader photos, ministry pictures) and the sample video IDs in `data/sermons.json`.

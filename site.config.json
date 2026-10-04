@@ -55,5 +55,6 @@
       "accountName": "Christ Community of Grace"
     }
   },
-  "contactFormKey": "YOUR_ACCESS_KEY_HERE"
+  "contactFormKey": "YOUR_ACCESS_KEY_HERE",
+  "contactFormCaptcha": true
 }

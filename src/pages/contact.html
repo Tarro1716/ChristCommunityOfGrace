@@ -23,7 +23,7 @@ bodyClass: page-contact
             <div>
               <h3 class="h5 mb-1" data-i18n="contact.messenger.heading">Fastest: message us on Facebook</h3>
               <p class="small-text mb-3" data-i18n="contact.messenger.body">Opens Messenger with our church page. We usually reply within the day.</p>
-              <a href="{{site.contact.messenger}}" target="_blank" rel="noopener" class="btn btn-accent"><svg class="icon" aria-hidden="true"><use href="#i-messenger"/></svg> <span data-i18n="common.messageUs">Message us on Messenger</span></a>
+              <a href="{{site.contact.messenger}}" target="_blank" rel="noopener noreferrer" class="btn btn-accent"><svg class="icon" aria-hidden="true"><use href="#i-messenger"/></svg> <span data-i18n="common.messageUs">Message us on Messenger</span></a>
             </div>
           </div>
           <p class="or-divider"><span data-i18n="contact.orEmail">or send an email</span></p>
@@ -37,18 +37,25 @@ bodyClass: page-contact
             <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="mb-3">
               <label for="name" class="form-label" data-i18n="contact.form.name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+              <input type="text" class="form-control" id="name" name="name" autocomplete="name" maxlength="120" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label" data-i18n="contact.form.email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" autocomplete="email" inputmode="email" required>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email" inputmode="email" maxlength="254" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label" data-i18n="contact.form.message">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              <textarea class="form-control" id="message" name="message" rows="5" maxlength="3000" required></textarea>
             </div>
+            {{#if site.contactFormCaptcha}}
+            <div class="mb-3 captcha-box">
+              <div class="h-captcha" data-captcha="true"></div>
+              <p class="form-text" data-i18n="contact.form.captchaNote">A quick check to keep out spam. We never share your details.</p>
+            </div>
+            {{/if}}
             <button type="submit" class="btn btn-primary-custom" data-i18n="contact.form.send">Send Message</button>
           </form>
+          {{#if site.contactFormCaptcha}}<script src="https://web3forms.com/client/script.js" async defer></script>{{/if}}
         </div>
 
         <div class="col-lg-6">
@@ -61,19 +68,19 @@ bodyClass: page-contact
             </li>
             {{#if site.contact.phone}}<li><svg class="icon" aria-hidden="true"><use href="#i-telephone"/></svg><a href="tel:{{phoneHref}}">{{site.contact.phone}}</a></li>{{/if}}
             {{#if site.contact.email}}<li><svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg><a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></li>{{/if}}
-            {{#if site.contact.facebook}}<li><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg><a href="{{site.contact.facebook}}" target="_blank" rel="noopener">Facebook</a></li>{{/if}}
-            <li><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg><a href="{{site.youtube.channel}}" target="_blank" rel="noopener">YouTube</a></li>
+            {{#if site.contact.facebook}}<li><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg><a href="{{site.contact.facebook}}" target="_blank" rel="noopener noreferrer">Facebook</a></li>{{/if}}
+            <li><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg><a href="{{site.youtube.channel}}" target="_blank" rel="noopener noreferrer">YouTube</a></li>
           </ul>
 
           <h3 class="h6 text-uppercase mt-4 mb-2 heading-label" data-i18n="common.serviceTimes">Service Times</h3>
           {{serviceTimesList}}
 
           <div class="d-flex flex-wrap gap-2 mt-4 mb-3">
-            <a class="btn btn-primary-custom" href="{{directionsUrl}}" target="_blank" rel="noopener">
+            <a class="btn btn-primary-custom" href="{{directionsUrl}}" target="_blank" rel="noopener noreferrer">
               <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
               <span data-i18n="common.openGoogleMaps">Open in Google Maps</span>
             </a>
-            <a class="btn btn-outline-primary-custom" href="{{wazeUrl}}" target="_blank" rel="noopener" data-i18n="common.openWaze">Open in Waze</a>
+            <a class="btn btn-outline-primary-custom" href="{{wazeUrl}}" target="_blank" rel="noopener noreferrer" data-i18n="common.openWaze">Open in Waze</a>
           </div>
           <div class="ratio ratio-4x3 map-frame">
             <iframe src="{{mapEmbedUrl}}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing the location of {{site.name}}"></iframe>
