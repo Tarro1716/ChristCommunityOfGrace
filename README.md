@@ -1,6 +1,6 @@
-# Christ Community of Grace — Website
+# Christ’s Community of Grace — Website
 
-Static website for Christ Community of Grace, Calamba, Laguna. Plain HTML, CSS and JavaScript on Bootstrap 5. No frameworks, no dependencies to install. Hosted on GitHub Pages.
+Static website for Christ’s Community of Grace, Calamba, Laguna. Plain HTML, CSS and JavaScript on Bootstrap 5. No frameworks, no dependencies to install. Hosted on GitHub Pages.
 
 ## Editing the site
 

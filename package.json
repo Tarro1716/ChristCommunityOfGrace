@@ -2,7 +2,7 @@
   "name": "christ-community-of-grace",
   "version": "2.0.0",
   "private": true,
-  "description": "Static website for Christ Community of Grace, Calamba. No dependencies.",
+  "description": "Static website for Christ’s Community of Grace, Calamba. No dependencies.",
   "scripts": {
     "build": "node build.js",
     "fetch-sermons": "node tools/fetch-sermons.js",

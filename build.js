@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Static site build for Christ Community of Grace.
+ * Static site build for Christ’s Community of Grace.
  * Zero dependencies. Usage: node build.js
  *
  * Reads site.config.json, data/*.json, lang/*.json, src/layout.html and

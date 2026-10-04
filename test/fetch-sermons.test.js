@@ -4,7 +4,7 @@ const { parseFeed } = require('../tools/fetch-sermons.js');
 
 const sample = `<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <title>Christ Community of Grace</title>
+ <title>Christ’s Community of Grace</title>
  <entry>
   <id>yt:video:AAA111</id><yt:videoId>AAA111</yt:videoId>
   <title>Older &amp; Wiser | Romans 8</title>

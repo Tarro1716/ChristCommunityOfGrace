@@ -1,4 +1,4 @@
-/* Christ Community of Grace — site behaviour
+/* Christ’s Community of Grace — site behaviour
    1. Active nav link       2. Language toggle (lang/*.json)
    3. Click-to-load YouTube 4. Copy buttons
    5. Upcoming events filter 6. Footer year

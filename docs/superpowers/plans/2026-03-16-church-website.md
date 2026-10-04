@@ -1,8 +1,8 @@
-# Christ Community of Grace Website — Implementation Plan
+# Christ’s Community of Grace Website — Implementation Plan
 
 > **For agentic workers:** REQUIRED: Use superpowers:subagent-driven-development (if subagents available) or superpowers:executing-plans to implement this plan. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a 7-page static church website for Christ Community of Grace using Bootstrap 5, modeled after gracechurch.org.
+**Goal:** Build a 7-page static church website for Christ’s Community of Grace using Bootstrap 5, modeled after gracechurch.org.
 
 **Architecture:** Static HTML/CSS with Bootstrap 5 via CDN. Shared `css/styles.css` for custom styles and `js/main.js` for interactions. Each page is a standalone `.html` file with identical header/footer markup. No build step, no framework.
 
@@ -412,7 +412,7 @@ The HTML structure (abbreviated for plan — full code to be written during impl
 <html lang="en">
 <head>
   - charset, viewport meta
-  - title: "Christ Community of Grace"
+  - title: "Christ’s Community of Grace"
   - meta description
   - Open Graph tags (og:title, og:description, og:type, og:url)
   - Favicon: <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%232E5339' width='32' height='32' rx='6'/><text x='16' y='22' font-size='18' fill='white' text-anchor='middle' font-family='serif'>C</text></svg>">
@@ -425,13 +425,13 @@ The HTML structure (abbreviated for plan — full code to be written during impl
   <!-- HEADER: Bootstrap navbar, sticky-top -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Christ Community<br>of Grace</a>
+      <a class="navbar-brand" href="index.html">Christ’s Community<br>of Grace</a>
       <button class="navbar-toggler" ... data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" id="mobileNav">
         <div class="offcanvas-header">
-          <h5>Christ Community of Grace</h5>
+          <h5>Christ’s Community of Grace</h5>
           <button class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
@@ -455,7 +455,7 @@ The HTML structure (abbreviated for plan — full code to be written during impl
         <!-- placeholder SVG or bg image -->
       </div>
       <div class="col-lg-6 home-hero-text">
-        <h1>Welcome to<br>Christ Community of Grace</h1>
+        <h1>Welcome to<br>Christ’s Community of Grace</h1>
         <div class="service-times">
           1st Sunday: 9:00 AM<br>
           2nd–5th Sunday: 9:30 AM<br>
@@ -482,7 +482,7 @@ The HTML structure (abbreviated for plan — full code to be written during impl
   <section class="section-padding text-center">
     <div class="container" style="max-width: 720px">
       <h2 class="section-heading">Welcome</h2>
-      <p class="section-subtext">Christ Community of Grace is a Bible-believing
+      <p class="section-subtext">Christ’s Community of Grace is a Bible-believing
       church in Calamba, Philippines. We gather to worship God, study His Word,
       and encourage one another in faith. Whether you're a long-time believer or
       exploring the Christian faith, you're welcome here.</p>
@@ -532,7 +532,7 @@ The HTML structure (abbreviated for plan — full code to be written during impl
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <h5>Christ Community of Grace</h5>
+          <h5>Christ’s Community of Grace</h5>
           <p>A Bible-believing church in Calamba, Philippines.</p>
           <p><i class="bi bi-geo-alt"></i> 2nd Floor, MM&Co., Bldg. 8000
           St. Angela Street, Lakeview Phase III, Halang, Calamba, Philippines, 4027</p>
@@ -562,7 +562,7 @@ The HTML structure (abbreviated for plan — full code to be written during impl
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Christ Community of Grace. All rights reserved.
+        &copy; 2026 Christ’s Community of Grace. All rights reserved.
       </div>
     </div>
   </footer>

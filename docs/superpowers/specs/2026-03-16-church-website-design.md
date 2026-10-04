@@ -1,12 +1,12 @@
-# Christ Community of Grace — Website Design Spec
+# Christ’s Community of Grace — Website Design Spec
 
 ## Overview
 
-A static HTML/CSS church website for Christ Community of Grace, modeled after gracechurch.org. Built with Bootstrap 5, no build step required. 7 pages with shared header/footer, responsive design, and YouTube integration.
+A static HTML/CSS church website for Christ’s Community of Grace, modeled after gracechurch.org. Built with Bootstrap 5, no build step required. 7 pages with shared header/footer, responsive design, and YouTube integration.
 
 ## Church Details
 
-- **Name:** Christ Community of Grace (text logo, no image)
+- **Name:** Christ’s Community of Grace (text logo, no image)
 - **Address:** 2nd Floor, MM&Co., Bldg. 8000 St. Angela Street, Lakeview Phase III, Halang, Calamba, Philippines, 4027
 - **Service times:**
   - 1st Sunday: 9:00 AM
@@ -86,7 +86,7 @@ Target: GitHub Pages (free, works with static HTML). Can be migrated to Netlify 
 
 **Header (all pages):**
 - Sticky top, white background, subtle bottom border
-- Text logo "Christ Community of Grace" on the left
+- Text logo "Christ’s Community of Grace" on the left
 - Centered nav links: About | Ministries | Sermons | News & Events | Give | Contact
 - Hover state: terracotta underline animation
 - Mobile (<992px): hamburger icon triggers Bootstrap offcanvas sidebar with nav links
@@ -105,7 +105,7 @@ Target: GitHub Pages (free, works with static HTML). Can be migrated to Netlify 
 - Split grid layout (gracechurch.org style): image left (50%), text right (50%)
 - Image: placeholder SVG (to be replaced with church photo)
 - Text side: warm cream background (`#F5F1EB`)
-  - Large heading: "Welcome to Christ Community of Grace"
+  - Large heading: "Welcome to Christ’s Community of Grace"
   - Service times listed
   - Terracotta "Livestream" button → links to YouTube channel streams page
   - "Service info →" link → links to Contact page

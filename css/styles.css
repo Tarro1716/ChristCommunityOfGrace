@@ -1,5 +1,5 @@
 /* ============================================================
-   Christ Community of Grace — site styles
+   Christ’s Community of Grace — site styles
    Mobile-first. Bootstrap 5 provides the grid and components.
    ============================================================ */
 
@@ -69,15 +69,15 @@ address { font-style: normal; }
 .brand-mark { height: 40px; width: auto; flex-shrink: 0; }
 .navbar-brand {
   font-family: var(--font-heading);
-  font-size: clamp(0.95rem, 3.9vw, 1.25rem);
+  font-size: clamp(0.9rem, 3.9vw, 1.25rem);
   font-weight: 700;
   color: var(--color-primary) !important;
   line-height: 1.2;
   white-space: normal;
-  max-width: 64vw;
+  max-width: calc(100vw - 140px); /* leave room for the language and menu buttons on one row */
   margin-right: 0.25rem;
 }
-@media (max-width: 575.98px) { .brand-mark { height: 32px; } .navbar-brand { gap: 0.4rem; } }
+@media (max-width: 575.98px) { .brand-mark { height: 32px; } .navbar-brand { gap: 0.4rem; line-height: 1.1; } }
 .navbar-toggler { padding: 0.4rem 0.5rem; }
 .navbar-toggler:focus { box-shadow: 0 0 0 3px rgba(36,69,100,0.35); }
 .nav-link {

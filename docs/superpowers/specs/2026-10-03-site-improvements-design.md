@@ -1,4 +1,4 @@
-# Christ Community of Grace — Site Improvements Design
+# Christ’s Community of Grace — Site Improvements Design
 
 Date: 2026-10-03. Follows the 2026-03-16 design spec; this spec changes how the site is built and adds features. The visual identity (forest green, terracotta, cream, Playfair + Inter, Bootstrap 5) stays.
 
