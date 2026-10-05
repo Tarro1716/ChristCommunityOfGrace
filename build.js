@@ -143,10 +143,7 @@ function latestPlayer() {
 }
 
 function recentSermon() {
-  if (uploadsPlaylist) {
-    return `        ${ytLite({ list: uploadsPlaylist, title: 'Latest sermon', poster: 'images/sermon-poster.svg' })}
-        <p class="text-muted mt-3" data-i18n="home.sermon.auto">Our newest upload plays here automatically.</p>`;
-  }
+  // Newest video from data/sermons.json (refreshed from the channel feed), shown with its real thumbnail and title.
   const s = sermons[0];
   return `        ${ytLite({ id: s.id, title: s.title })}
         <h3 class="h4 mt-4">${esc(s.title)}</h3>
