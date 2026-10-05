@@ -476,7 +476,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .footer-seeyou { text-align: center; }
 }
 @media (min-width: 992px) {
-  .home-hero .row { min-height: min(72vh, 700px); }
-  .home-hero-text { padding: 3.5rem 3.5rem 3.5rem 3rem; }
+  .home-hero .row { min-height: min(82vh, 760px); }
+  .home-hero-text { padding: 4rem 3.5rem 4rem 3rem; }
   .home-hero-text h1 { font-size: clamp(2.4rem, 3.4vw, 3rem); }
 }
