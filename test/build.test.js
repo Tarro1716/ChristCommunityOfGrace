@@ -94,9 +94,9 @@ test('statement of faith renders every section, and the About accordion links to
   assert.equal((about.match(/<div class="accordion-body">\s*<p/g) || []).length, 12);
 });
 
-test('homepage hero is a three-photo carousel with existing images', () => {
+test('homepage hero is a four-photo carousel with existing images', () => {
   const html = read('index.html');
-  assert.equal((html.match(/class="carousel-item/g) || []).length, 3);
+  assert.equal((html.match(/class="carousel-item/g) || []).length, 4);
   const srcs = [...html.matchAll(/(?:src|srcset)="([^"]*photos\/[^"]+)"/g)].flatMap((m) => m[1].split(',').map((p) => p.trim().split(' ')[0]));
   assert.ok(srcs.length >= 3);
   for (const p of srcs) assert.ok(fs.existsSync(path.join(root, p)), `${p} missing`);

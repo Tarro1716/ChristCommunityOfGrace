@@ -140,7 +140,7 @@
   "home.events.eyebrow": "This Month",
   "home.sermon.eyebrow": "Listen",
   "home.newhere.eyebrow": "Join Us",
-  "home.band.verse": "\"Come to me, all you who are weary and burdened, and I will give you rest.\"",
+  "home.band.verse": "\"Come to me, all you who are weary and burdened,<br>and I will give you rest.\"",
   "newhere.expect.eyebrow": "Your First Visit",
   "newhere.note.eyebrow": "A Note from Our Pastor",
   "newhere.note.body": "Walking into a new church can feel like a big step. I want you to know that there is no pressure here, only a warm welcome. Come as you are, bring your questions, and let us show you the love of Jesus. We would be honoured to have you with us this Sunday.",
@@ -182,5 +182,7 @@
   "common.next": "Next",
   "home.hero.alt1": "A father holds his sleeping daughter while worshipping with the congregation",
   "home.hero.alt2": "The pastor preaching from the pulpit to the gathered church",
-  "home.hero.alt3": "Wildflowers growing beside a fence outside the church"
+  "home.hero.alt3": "The congregation seated for the Sunday service as the pastor preaches",
+  "home.hero.alt4": "The church building in Calamba, framed by palm trees",
+  "home.welcome.alt": "The whole congregation gathered for a group photo after the service"
 }

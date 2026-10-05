@@ -140,7 +140,7 @@
   "home.events.eyebrow": "Ngayong Buwan",
   "home.sermon.eyebrow": "Makinig",
   "home.newhere.eyebrow": "Sumama sa Amin",
-  "home.band.verse": "\"Lumapit kayo sa akin, kayong lahat na napapagod at nabibigatan, at bibigyan ko kayo ng kapahingahan.\"",
+  "home.band.verse": "\"Lumapit kayo sa akin, kayong lahat na napapagod at nabibigatan,<br>at bibigyan ko kayo ng kapahingahan.\"",
   "newhere.expect.eyebrow": "Ang Iyong Unang Pagbisita",
   "newhere.note.eyebrow": "Mensahe mula sa Aming Pastor",
   "newhere.note.body": "Maaaring malaking hakbang ang pagpasok sa isang bagong simbahan. Nais kong malaman mo na walang pamimilit dito, tanging mainit na pagtanggap. Pumunta ka kung ano ka man, dalhin ang iyong mga tanong, at hayaan mo kaming ipakita sa iyo ang pag-ibig ni Jesus. Karangalan namin kung makakasama ka namin ngayong Linggo.",
@@ -182,5 +182,7 @@
   "common.next": "Susunod",
   "home.hero.alt1": "Karga ng isang ama ang kanyang natutulog na anak habang sumasamba kasama ang kongregasyon",
   "home.hero.alt2": "Nangangaral ang pastor mula sa pulpito sa nagtipong iglesya",
-  "home.hero.alt3": "Mga ligaw na bulaklak sa tabi ng bakod sa labas ng simbahan"
+  "home.hero.alt3": "Ang kongregasyong nakaupo sa pagsamba tuwing Linggo habang nangangaral ang pastor",
+  "home.hero.alt4": "Ang gusali ng simbahan sa Calamba, napapaligiran ng mga puno ng palma",
+  "home.welcome.alt": "Ang buong kongregasyon na nagtipon para sa group photo pagkatapos ng pagsamba"
 }
