@@ -133,12 +133,15 @@ function sermonsGrid() {
 }
 
 function latestPlayer() {
-  if (!uploadsPlaylist) return '';
+  const s = sermons[0];
+  if (!s) return '';
   return `      <div class="latest-player">
         <p class="eyebrow text-center" data-i18n="sermons.latestEyebrow">Just Uploaded</p>
         <h2 class="section-heading text-center" data-i18n="sermons.latestHeading">Latest Message</h2>
-        <p class="section-subtext text-center" data-i18n="sermons.latestSub">Press play to watch our most recent upload. The whole channel is in the playlist.</p>
-        ${ytLite({ list: uploadsPlaylist, title: 'Latest sermon', poster: 'images/sermon-poster.svg' })}
+        <p class="section-subtext text-center" data-i18n="sermons.latestSub">Press play to watch our most recent upload.</p>
+        ${ytLite({ id: s.id, title: s.title })}
+        <h3 class="h4 mt-4 text-center">${esc(s.title)}</h3>
+        <p class="text-muted text-center"><time datetime="${esc(s.date)}">${longDate(s.date)}</time></p>
       </div>`;
 }
 
