@@ -30,7 +30,6 @@
   "home.hero.livestream": "Watch Livestream",
   "home.hero.planVisit": "Plan Your Visit",
   "home.hero.directions": "Get directions to our church",
-  "home.hero.featured": "Featured",
   "home.hero.link1": "Our Beliefs & Mission",
   "home.hero.link2": "Latest Sermons",
   "home.hero.link3": "Ministries & Groups",
@@ -136,7 +135,7 @@
   "thanks.body": "Your message has been sent. Someone from our team will get back to you soon.",
   "notfound.title": "Page Not Found",
   "notfound.body": "Sorry, we couldn't find that page. It may have moved.",
-  "footer.seeYou": "See you Sunday.",
+  "footer.seeYou": "See you on Sunday.",
   "home.welcome.eyebrow": "Who We Are",
   "home.events.eyebrow": "This Month",
   "home.sermon.eyebrow": "Listen",
@@ -178,5 +177,10 @@
   "common.downloadPdf": "Download PDF",
   "sof.title": "Statement of Faith",
   "sof.sub": "The doctrinal convictions that shape our preaching, worship and life together, with the Scriptures they rest on.",
-  "sof.contents": "Contents"
+  "sof.contents": "Contents",
+  "common.previous": "Previous",
+  "common.next": "Next",
+  "home.hero.alt1": "A father holds his sleeping daughter while worshipping with the congregation",
+  "home.hero.alt2": "The pastor preaching from the pulpit to the gathered church",
+  "home.hero.alt3": "Wildflowers growing beside a fence outside the church"
 }

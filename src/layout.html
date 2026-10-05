@@ -84,19 +84,18 @@
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="footer-brand"><span class="footer-logo-tile"><img src="images/logo.png" alt="" width="54" height="48"></span><h2 class="footer-heading mb-0">{{site.name}}</h2></div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a class="footer-brand" href="index.html">
+            <span class="footer-logo-tile"><img src="images/logo.png" alt="" width="54" height="48"></span>
+            <span class="footer-wordmark"><span class="footer-wordmark-top">Christ’s</span><span class="footer-wordmark-bottom">Community of Grace</span></span>
+          </a>
           <p data-i18n="footer.tagline">{{site.tagline}}</p>
-          <address class="footer-address">
-            <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
-            <span>{{site.address.line1}}<br>{{site.address.line2}}</span>
-          </address>
+          <address class="footer-address">{{site.address.line1}}<br>{{site.address.line2}}</address>
           <a class="footer-directions" href="{{directionsUrl}}" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="common.getDirections">Get directions</span>
-            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-box-arrow-up-right"/></svg>
+            <span data-i18n="common.getDirections">Get directions</span> &rsaquo;
           </a>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-2 mb-4">
           <h2 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h2>
           <ul class="list-unstyled footer-links">
             <li><a href="new-here.html" data-i18n="nav.newHere">New Here?</a></li>
@@ -108,10 +107,8 @@
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <h2 class="footer-heading" data-i18n="common.serviceTimes">Service Times</h2>
-          {{serviceTimesList}}
-          <h2 class="footer-heading mt-4" data-i18n="footer.connect">Connect</h2>
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
+          <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
           <ul class="list-unstyled footer-links footer-connect">
             <li><a href="{{site.youtube.channel}}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg> YouTube</a></li>
             {{#if site.contact.facebook}}<li><a href="{{site.contact.facebook}}" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> Facebook</a></li>{{/if}}
@@ -120,8 +117,12 @@
             {{#if site.contact.email}}<li><a href="mailto:{{site.contact.email}}"><svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg> {{site.contact.email}}</a></li>{{/if}}
           </ul>
         </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <h2 class="footer-heading" data-i18n="common.serviceTimes">Service Times</h2>
+          {{serviceTimesList}}
+        </div>
       </div>
-      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you on Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>{{year}}</span> {{site.name}}. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

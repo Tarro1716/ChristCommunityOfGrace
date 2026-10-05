@@ -7,26 +7,44 @@ bodyClass: page-home
   <section class="home-hero" aria-labelledby="hero-title">
     <div class="row g-0">
       <div class="col-lg-6 home-hero-image">
-        <img src="images/hero-placeholder.svg" alt="" width="600" height="500">
+        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" aria-roledescription="carousel" aria-label="Photos from our church">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="images/photos/hero-1.jpg" srcset="images/photos/hero-1-sm.jpg 900w, images/photos/hero-1.jpg 1600w" sizes="(min-width: 992px) 50vw, 100vw" alt="A father holds his sleeping daughter while worshipping with the congregation" data-i18n-attr="alt:home.hero.alt1" width="1280" height="1600" fetchpriority="high">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/photos/hero-3.jpg" srcset="images/photos/hero-3-sm.jpg 900w, images/photos/hero-3.jpg 1600w" sizes="(min-width: 992px) 50vw, 100vw" alt="The pastor preaching from the pulpit to the gathered church" data-i18n-attr="alt:home.hero.alt2" width="1600" height="1067" loading="lazy">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/photos/hero-2.jpg" srcset="images/photos/hero-2-sm.jpg 720w" sizes="(min-width: 992px) 50vw, 100vw" alt="Wildflowers growing beside a fence outside the church" data-i18n-attr="alt:home.hero.alt3" width="720" height="1080" loading="lazy">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" data-i18n="common.previous">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" data-i18n="common.next">Next</span>
+          </button>
+        </div>
       </div>
       <div class="col-lg-6 home-hero-text">
         <p class="hero-eyebrow" data-i18n="home.hero.eyebrow">Calamba, Laguna</p>
         <h1 id="hero-title" data-i18n-html="home.hero.title">Welcome to<br>Christ’s Community of Grace</h1>
         {{serviceTimesInline}}
-        <div class="hero-actions">
-          <a href="{{site.youtube.livestream}}" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
-            <svg class="icon" aria-hidden="true"><use href="#i-play-circle"/></svg>
-            <span data-i18n="home.hero.livestream">Watch Livestream</span>
+        <div class="hero-row">
+          <a href="{{directionsUrl}}" target="_blank" rel="noopener noreferrer" class="service-link">
+            <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
+            <span data-i18n="home.hero.directions">Get directions to our church</span>
           </a>
-          <a href="new-here.html" class="btn btn-outline-primary-custom">
-            <span data-i18n="home.hero.planVisit">Plan Your Visit</span>
-          </a>
+          <a href="new-here.html" class="btn btn-outline-primary-custom btn-sm-round" data-i18n="home.hero.planVisit">Plan Your Visit</a>
         </div>
-        <a href="{{directionsUrl}}" target="_blank" rel="noopener noreferrer" class="service-link">
-          <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
-          <span data-i18n="home.hero.directions">Get directions to our church</span>
-        </a>
-        <p class="featured-label" data-i18n="home.hero.featured">Featured</p>
         <nav class="featured-links" aria-label="Featured">
           <a href="about.html"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg><span data-i18n="home.hero.link1">Our Beliefs &amp; Mission</span></a>
           <a href="sermons.html"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg><span data-i18n="home.hero.link2">Latest Sermons</span></a>
@@ -57,17 +75,23 @@ bodyClass: page-home
   </section>
 
   <!-- ===== UPCOMING EVENTS ===== -->
-  <section class="section-padding bg-cream">
-    <div class="container">
-      <p class="eyebrow text-center" data-i18n="home.events.eyebrow">This Month</p>
-      <h2 class="section-heading text-center" data-i18n="events.upcoming">Upcoming Events</h2>
-      <p class="section-subtext text-center" data-i18n="home.events.sub">Join us for worship, study, and fellowship.</p>
-      <div class="row g-4" data-events data-limit="3">
-{{eventsHome}}
+  <section aria-labelledby="events-heading">
+    <div class="events-banner">
+      <div class="container text-center">
+        <p class="eyebrow eyebrow-light" data-i18n="home.events.eyebrow">This Month</p>
+        <h2 id="events-heading" class="section-heading section-heading-light" data-i18n="events.upcoming">Upcoming Events</h2>
+        <p class="events-banner-sub" data-i18n="home.events.sub">Join us for worship, study, and fellowship.</p>
       </div>
-      <p class="text-center text-muted d-none" data-events-empty data-i18n="events.none">No upcoming events are scheduled right now. See you on Sunday!</p>
-      <div class="text-center mt-5">
-        <a href="events.html" class="link-accent link-lg"><span data-i18n="home.events.all">View All Events</span> &rarr;</a>
+    </div>
+    <div class="section-padding bg-cream">
+      <div class="container">
+        <div class="row g-4" data-events data-limit="3">
+{{eventsHome}}
+        </div>
+        <p class="text-center text-muted d-none" data-events-empty data-i18n="events.none">No upcoming events are scheduled right now. See you on Sunday!</p>
+        <div class="text-center mt-5">
+          <a href="events.html" class="link-accent link-lg"><span data-i18n="home.events.all">View All Events</span> &rarr;</a>
+        </div>
       </div>
     </div>
   </section>

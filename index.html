@@ -89,26 +89,44 @@
   <section class="home-hero" aria-labelledby="hero-title">
     <div class="row g-0">
       <div class="col-lg-6 home-hero-image">
-        <img src="images/hero-placeholder.svg" alt="" width="600" height="500">
+        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" aria-roledescription="carousel" aria-label="Photos from our church">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
+          </div>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="images/photos/hero-1.jpg" srcset="images/photos/hero-1-sm.jpg 900w, images/photos/hero-1.jpg 1600w" sizes="(min-width: 992px) 50vw, 100vw" alt="A father holds his sleeping daughter while worshipping with the congregation" data-i18n-attr="alt:home.hero.alt1" width="1280" height="1600" fetchpriority="high">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/photos/hero-3.jpg" srcset="images/photos/hero-3-sm.jpg 900w, images/photos/hero-3.jpg 1600w" sizes="(min-width: 992px) 50vw, 100vw" alt="The pastor preaching from the pulpit to the gathered church" data-i18n-attr="alt:home.hero.alt2" width="1600" height="1067" loading="lazy">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/photos/hero-2.jpg" srcset="images/photos/hero-2-sm.jpg 720w" sizes="(min-width: 992px) 50vw, 100vw" alt="Wildflowers growing beside a fence outside the church" data-i18n-attr="alt:home.hero.alt3" width="720" height="1080" loading="lazy">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" data-i18n="common.previous">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" data-i18n="common.next">Next</span>
+          </button>
+        </div>
       </div>
       <div class="col-lg-6 home-hero-text">
         <p class="hero-eyebrow" data-i18n="home.hero.eyebrow">Calamba, Laguna</p>
         <h1 id="hero-title" data-i18n-html="home.hero.title">Welcome to<br>Christ’s Community of Grace</h1>
         <ul class="service-times service-times-hero"><li><span class="svc-label"><span data-tl="Unang Linggo">1st Sunday</span></span> <span class="svc-time">9:00 AM</span></li><li><span class="svc-label"><span data-tl="Ika-2 hanggang ika-5 Linggo">2nd–5th Sunday</span></span> <span class="svc-time">9:30 AM</span></li><li><span class="svc-label"><span data-tl="Miyerkules">Wednesday</span></span> <span class="svc-time">6:00 PM</span></li></ul>
-        <div class="hero-actions">
-          <a href="https://www.youtube.com/@ChristsCommunityofGrace/streams" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
-            <svg class="icon" aria-hidden="true"><use href="#i-play-circle"/></svg>
-            <span data-i18n="home.hero.livestream">Watch Livestream</span>
+        <div class="hero-row">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=2nd%20Floor%2C%20MM%26Co.%20Bldg.%2C%208000%20St.%20Angela%20Street%2C%20Lakeview%20Phase%20III%2C%20Halang%2C%20Calamba%2C%20Laguna%204027%2C%20Philippines" target="_blank" rel="noopener noreferrer" class="service-link">
+            <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
+            <span data-i18n="home.hero.directions">Get directions to our church</span>
           </a>
-          <a href="new-here.html" class="btn btn-outline-primary-custom">
-            <span data-i18n="home.hero.planVisit">Plan Your Visit</span>
-          </a>
+          <a href="new-here.html" class="btn btn-outline-primary-custom btn-sm-round" data-i18n="home.hero.planVisit">Plan Your Visit</a>
         </div>
-        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=2nd%20Floor%2C%20MM%26Co.%20Bldg.%2C%208000%20St.%20Angela%20Street%2C%20Lakeview%20Phase%20III%2C%20Halang%2C%20Calamba%2C%20Laguna%204027%2C%20Philippines" target="_blank" rel="noopener noreferrer" class="service-link">
-          <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
-          <span data-i18n="home.hero.directions">Get directions to our church</span>
-        </a>
-        <p class="featured-label" data-i18n="home.hero.featured">Featured</p>
         <nav class="featured-links" aria-label="Featured">
           <a href="about.html"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg><span data-i18n="home.hero.link1">Our Beliefs &amp; Mission</span></a>
           <a href="sermons.html"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg><span data-i18n="home.hero.link2">Latest Sermons</span></a>
@@ -139,12 +157,17 @@
   </section>
 
   <!-- ===== UPCOMING EVENTS ===== -->
-  <section class="section-padding bg-cream">
-    <div class="container">
-      <p class="eyebrow text-center" data-i18n="home.events.eyebrow">This Month</p>
-      <h2 class="section-heading text-center" data-i18n="events.upcoming">Upcoming Events</h2>
-      <p class="section-subtext text-center" data-i18n="home.events.sub">Join us for worship, study, and fellowship.</p>
-      <div class="row g-4" data-events data-limit="3">
+  <section aria-labelledby="events-heading">
+    <div class="events-banner">
+      <div class="container text-center">
+        <p class="eyebrow eyebrow-light" data-i18n="home.events.eyebrow">This Month</p>
+        <h2 id="events-heading" class="section-heading section-heading-light" data-i18n="events.upcoming">Upcoming Events</h2>
+        <p class="events-banner-sub" data-i18n="home.events.sub">Join us for worship, study, and fellowship.</p>
+      </div>
+    </div>
+    <div class="section-padding bg-cream">
+      <div class="container">
+        <div class="row g-4" data-events data-limit="3">
 
         <div class="col-md-4" data-date="2026-10-11">
           <article class="card card-custom h-100">
@@ -210,10 +233,11 @@
             </div>
           </article>
         </div>
-      </div>
-      <p class="text-center text-muted d-none" data-events-empty data-i18n="events.none">No upcoming events are scheduled right now. See you on Sunday!</p>
-      <div class="text-center mt-5">
-        <a href="events.html" class="link-accent link-lg"><span data-i18n="home.events.all">View All Events</span> &rarr;</a>
+        </div>
+        <p class="text-center text-muted d-none" data-events-empty data-i18n="events.none">No upcoming events are scheduled right now. See you on Sunday!</p>
+        <div class="text-center mt-5">
+          <a href="events.html" class="link-accent link-lg"><span data-i18n="home.events.all">View All Events</span> &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -263,19 +287,18 @@
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="footer-brand"><span class="footer-logo-tile"><img src="images/logo.png" alt="" width="54" height="48"></span><h2 class="footer-heading mb-0">Christ’s Community of Grace</h2></div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a class="footer-brand" href="index.html">
+            <span class="footer-logo-tile"><img src="images/logo.png" alt="" width="54" height="48"></span>
+            <span class="footer-wordmark"><span class="footer-wordmark-top">Christ’s</span><span class="footer-wordmark-bottom">Community of Grace</span></span>
+          </a>
           <p data-i18n="footer.tagline">A Bible-believing church in Calamba, Philippines.</p>
-          <address class="footer-address">
-            <svg class="icon" aria-hidden="true"><use href="#i-geo-alt"/></svg>
-            <span>2nd Floor, MM&amp;Co. Bldg., 8000 St. Angela Street<br>Lakeview Phase III, Halang, Calamba, Laguna 4027</span>
-          </address>
+          <address class="footer-address">2nd Floor, MM&amp;Co. Bldg., 8000 St. Angela Street<br>Lakeview Phase III, Halang, Calamba, Laguna 4027</address>
           <a class="footer-directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=2nd%20Floor%2C%20MM%26Co.%20Bldg.%2C%208000%20St.%20Angela%20Street%2C%20Lakeview%20Phase%20III%2C%20Halang%2C%20Calamba%2C%20Laguna%204027%2C%20Philippines" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="common.getDirections">Get directions</span>
-            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-box-arrow-up-right"/></svg>
+            <span data-i18n="common.getDirections">Get directions</span> &rsaquo;
           </a>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="col-6 col-md-3 col-lg-2 mb-4">
           <h2 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h2>
           <ul class="list-unstyled footer-links">
             <li><a href="new-here.html" data-i18n="nav.newHere">New Here?</a></li>
@@ -287,10 +310,8 @@
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <h2 class="footer-heading" data-i18n="common.serviceTimes">Service Times</h2>
-          <ul class="service-times service-times-stacked"><li><span class="svc-label"><span data-tl="Unang Linggo">1st Sunday</span></span><span class="svc-time">9:00 AM</span></li><li><span class="svc-label"><span data-tl="Ika-2 hanggang ika-5 Linggo">2nd–5th Sunday</span></span><span class="svc-time">9:30 AM</span></li><li><span class="svc-label"><span data-tl="Miyerkules">Wednesday</span></span><span class="svc-time">6:00 PM</span></li></ul>
-          <h2 class="footer-heading mt-4" data-i18n="footer.connect">Connect</h2>
+        <div class="col-6 col-md-3 col-lg-3 mb-4">
+          <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
           <ul class="list-unstyled footer-links footer-connect">
             <li><a href="https://www.youtube.com/@ChristsCommunityofGrace" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg> YouTube</a></li>
             <li><a href="https://www.facebook.com/christscommunityofgrace" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> Facebook</a></li>
@@ -299,8 +320,12 @@
             
           </ul>
         </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <h2 class="footer-heading" data-i18n="common.serviceTimes">Service Times</h2>
+          <ul class="service-times service-times-stacked"><li><span class="svc-label"><span data-tl="Unang Linggo">1st Sunday</span></span><span class="svc-time">9:00 AM</span></li><li><span class="svc-label"><span data-tl="Ika-2 hanggang ika-5 Linggo">2nd–5th Sunday</span></span><span class="svc-time">9:30 AM</span></li><li><span class="svc-label"><span data-tl="Miyerkules">Wednesday</span></span><span class="svc-time">6:00 PM</span></li></ul>
+        </div>
       </div>
-      <p class="footer-seeyou" data-i18n="footer.seeYou">See you Sunday.</p>
+      <p class="footer-seeyou" data-i18n="footer.seeYou">See you on Sunday.</p>
       <div class="footer-bottom">
         &copy; <span data-year>2026</span> Christ’s Community of Grace. <span data-i18n="footer.rights">All rights reserved.</span>
       </div>

@@ -30,7 +30,6 @@
   "home.hero.livestream": "Manood ng Livestream",
   "home.hero.planVisit": "Planuhin ang Pagbisita",
   "home.hero.directions": "Direksyon papunta sa aming simbahan",
-  "home.hero.featured": "Tampok",
   "home.hero.link1": "Aming Paniniwala at Misyon",
   "home.hero.link2": "Pinakabagong mga Sermon",
   "home.hero.link3": "Mga Ministeryo at Grupo",
@@ -178,5 +177,10 @@
   "common.downloadPdf": "I-download ang PDF",
   "sof.title": "Pahayag ng Pananampalataya",
   "sof.sub": "Ang mga paniniwalang humuhubog sa aming pangangaral, pagsamba at pagsasama, kasama ang mga Kasulatang pinagbabatayan nito.",
-  "sof.contents": "Nilalaman"
+  "sof.contents": "Nilalaman",
+  "common.previous": "Nakaraan",
+  "common.next": "Susunod",
+  "home.hero.alt1": "Karga ng isang ama ang kanyang natutulog na anak habang sumasamba kasama ang kongregasyon",
+  "home.hero.alt2": "Nangangaral ang pastor mula sa pulpito sa nagtipong iglesya",
+  "home.hero.alt3": "Mga ligaw na bulaklak sa tabi ng bakod sa labas ng simbahan"
 }

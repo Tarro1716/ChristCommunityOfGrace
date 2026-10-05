@@ -94,6 +94,15 @@ test('statement of faith renders every section, and the About accordion links to
   assert.equal((about.match(/<div class="accordion-body">\s*<p/g) || []).length, 12);
 });
 
+test('homepage hero is a three-photo carousel with existing images', () => {
+  const html = read('index.html');
+  assert.equal((html.match(/class="carousel-item/g) || []).length, 3);
+  const srcs = [...html.matchAll(/(?:src|srcset)="([^"]*photos\/[^"]+)"/g)].flatMap((m) => m[1].split(',').map((p) => p.trim().split(' ')[0]));
+  assert.ok(srcs.length >= 3);
+  for (const p of srcs) assert.ok(fs.existsSync(path.join(root, p)), `${p} missing`);
+  for (const m of html.matchAll(/<img[^>]*photos\/hero[^>]*>/g)) assert.match(m[0], /alt="[^"]{10,}"/, 'hero photo needs alt text');
+});
+
 test('empty contact channels are hidden, filled ones shown', () => {
   const cfg = JSON.parse(read('site.config.json'));
   const html = read('contact.html');
